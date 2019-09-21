@@ -1,0 +1,1 @@
+pscp.exe java-gradle-0.0.1-SNAPSHOT.jar root@47.98.253.255:/home/admin/

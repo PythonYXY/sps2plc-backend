@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="49308c18-585e-4f19-951b-9145f31c479c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/java-gradle.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/sps2plc/Sps2plcApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/sps2plc/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/sps2plc/projects/LoadProjectDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/sps2plc/projects/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/sps2plc/projects/ProjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/sps2plc/projects/ProjectNotFoundAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/sps2plc/projects/ProjectNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/sps2plc/projects/ProjectRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/sps2plc/projects/ProjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/sps2plc/requirements/LoadRequirementDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/sps2plc/requirements/Requirement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/sps2plc/requirements/RequirementController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/sps2plc/requirements/RequirementNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/sps2plc/requirements/RequirementRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/sps2plc/requirements/RequirementService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/classes/java/main/payroll/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/classes/java/main/payroll/EmployeeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/classes/java/main/payroll/EmployeeNotFoundAdvice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/classes/java/main/payroll/EmployeeNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/classes/java/main/payroll/EmployeeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/classes/java/main/payroll/LoadDatabase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/classes/java/main/payroll/PayrollApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-gradle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-gradle.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-gradle.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/../java-gradle.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-gradle.iws" beforeDir="false" afterPath="$PROJECT_DIR$/../java-gradle.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/payroll/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/payroll/EmployeeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/payroll/EmployeeNotFoundAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/payroll/EmployeeNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/payroll/EmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/payroll/LoadDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/payroll/PayrollApplication.java" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1P0iwJY7idmXPgYdqOEoVzuHHHr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="49308c18-585e-4f19-951b-9145f31c479c" name="Default Changelist" comment="" />
+      <created>1565017651950</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565017651950</updated>
+      <workItem from="1565017656195" duration="13000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
