@@ -1,18 +1,15 @@
 package sps2plc.tasks;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import sps2plc.core.fe.SPSFrontEnd;
+import sps2plc.core.models.plc.ILCode;
 import sps2plc.ioTable.IOMap;
 import sps2plc.ioTable.IOTableService;
 import sps2plc.requirements.Requirement;
 import sps2plc.requirements.RequirementService;
-import sps2plc.core.SpsToPlc_final;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -35,116 +32,94 @@ public class TaskService {
         this.ioTableService = ioTableService;
     }
 
-    public List<String> getPriorityId(String ret) {
-        return Arrays.asList(ret.substring(10).split("\r\n"))
-                .stream()
-                .map(str -> Arrays.asList(str.split("<")).stream()
-                        .map(index -> Long.toString(this.reqArray.get(Integer.parseInt(index) - 1).getId()))
-                        .collect(Collectors.joining("<"))
-                )
-                .collect(Collectors.toList());
-    }
-
-    public Task getTask(Long projId) {
-        this.reqArray = this.requirementService.getProjectRequirementsEnabled(projId);
+    private String preprocessRequirement(Long projId, List<Requirement> reqArray) {
         List<IOMap> ioTable = this.ioTableService.getProjectIOTable(projId);
         Map<String, String> ioMap = new HashMap<>();
         for (IOMap io: ioTable) {
             ioMap.put(io.getIOName(), io.getIONumber());
         }
 
-        String priority = "";
         String pattern = "[\\u4E00-\\u9FA5]\\S+[\\u4E00-\\u9FA5]";
         Pattern r = Pattern.compile(pattern);
 
-        String ret = SpsToPlc_final.specAnlysis(
-                this.reqArray.stream()
-                        .map(requirement -> {
-                            String temp = requirement.getText();
-                            Matcher m = r.matcher(requirement.getText());
-                            while (m.find()) {
-//                                System.out.println("temp: " + temp + ", mGroup(0): " + m.group(0));
-                                String repStr = ioMap.containsKey(m.group(0)) ? ioMap.get(m.group(0)) : m.group(0);
-                                temp = temp.replace(m.group(0), repStr);
-                            }
-                            System.out.println(temp);
-                            return temp;
-                        })
-                        .collect(Collectors.toList()),
-                priority);
+        StringBuilder ret = new StringBuilder();
+        reqArray.forEach(requirement -> {
+            String temp = requirement.getText();
+            Matcher m = r.matcher(requirement.getText());
+            while (m.find()) {
+//            System.out.println("temp: " + temp + ", mGroup(0): " + m.group(0));
+                String repStr = ioMap.containsKey(m.group(0)) ? ioMap.get(m.group(0)) : m.group(0);
+                temp = temp.replace(m.group(0), repStr);
+            }
+            System.out.println(temp);
 
-        if (ret.startsWith("code")) {
-            SpsToPlc_final.reset();
-            return taskRepository.save(new Task(
+            ret.append('[' + String.valueOf(requirement.getId()) + ']' + temp + '\n');
+        });
+        return ret.toString();
+    }
+
+    public Task getTask(Long projId) {
+        this.reqArray = this.requirementService.getProjectRequirementsEnabled(projId);
+
+        SPSFrontEnd fe = new SPSFrontEnd();
+        fe.parseString(preprocessRequirement(projId, this.reqArray));
+        ILCode ilCode = fe.getILCode(null);
+
+        if (!ilCode.getCircularDependencyRequirements().isEmpty()) {
+            return new Task(
                     projId,
-                    "Generated PLC Code",
-                    Task.TaskStatus.GENERATE,
+                    "There is a circular dependency among the following requirements:",
+                    Task.TaskStatus.CIRCULAR,
                     null,
-                    ret.substring(6)
-            ));
+                    ilCode.getCircularDependencyRequirements().stream().map(reqIds -> String.join(",", reqIds)).collect(Collectors.toList()),
+                    null
+            );
         }
 
-        return new Task(
+        List<String> priorities = new ArrayList<>();
+        for (Map.Entry<String, List<String>> entry: ilCode.getConflictedRequirements().entrySet()) {
+            priorities.add(String.join("<", entry.getValue()));
+        }
+
+        if (!ilCode.getConflictedRequirements().isEmpty()) {
+            return new Task(
+                    projId,
+                    "Claim priority of following specifications with the same object: ",
+                    Task.TaskStatus.PRIORITY,
+                    priorities,
+                    null,
+                    null
+            );
+        }
+
+        return taskRepository.save(new Task(
                 projId,
-                "Claim priority of following specifications with the same object: ",
-                Task.TaskStatus.PRIORITY,
-                getPriorityId(ret),
-                null
-        );
+                "Generated IL Code",
+                Task.TaskStatus.GENERATE,
+                null,
+                null,
+                ilCode.getGeneratedILCode()
+        ));
     }
 
-    public List<String> getPriorityIndex(List<String> priorityArray) {
-        return priorityArray.stream()
-                .map(str -> Arrays.asList(str.split("<"))
-                        .stream()
-                        .map(id -> {
-                            for (int i = 0; i < this.reqArray.size(); i++) {
-                                if (this.reqArray.get(i).getId() == Long.parseLong(id)) return Integer.toString(i + 1);
-                            }
-                            return id;
-                        }
-                        )
-                        .collect(Collectors.joining("<"))
-                )
-                .collect(Collectors.toList());
-    }
 
     public Task getTask(Task task) {
-        String priority = getPriorityIndex(task.getPriorityArray()).stream()
-                .collect(Collectors.joining("\r\n","", "\r\n"));
+        this.reqArray = this.requirementService.getProjectRequirementsEnabled(task.getProjectId());
 
-        List<IOMap> ioTable = this.ioTableService.getProjectIOTable(task.getProjectId());
-        Map<String, String> ioMap = new HashMap<>();
-        for (IOMap io: ioTable) {
-            ioMap.put(io.getIOName(), io.getIONumber());
-        }
+        List<List<String>> priorityArray = new ArrayList<>();
+        task.getPriorityArray().forEach(priority -> priorityArray.add(Arrays.asList(priority.split("<"))));
 
-        String pattern = "[\\u4E00-\\u9FA5]\\S+[\\u4E00-\\u9FA5]";
-        Pattern r = Pattern.compile(pattern);
-
-        String ret = SpsToPlc_final.specAnlysis(
-                this.reqArray.stream()
-                        .map(requirement -> {
-                            String temp = requirement.getText();
-                            Matcher m = r.matcher(requirement.getText());
-                            while (m.find()) {
-//                                System.out.println("temp: " + temp + ", mGroup(0): " + m.group(0));
-                                String repStr = ioMap.containsKey(m.group(0)) ? ioMap.get(m.group(0)) : m.group(0);
-                                temp = temp.replace(m.group(0), repStr);
-                            }
-                            System.out.println(temp);
-                            return temp;
-                        })
-                        .collect(Collectors.toList()),
-                priority);
-        SpsToPlc_final.reset();
+        SPSFrontEnd fe = new SPSFrontEnd();
+        fe.parseString(preprocessRequirement(task.getProjectId(), reqArray));
+        ILCode ilCode = fe.getILCode(priorityArray);
 
         return taskRepository.save(new Task(
                 task.getProjectId(),
-                "Generated PLC Code",
+                "Generated IL Code",
                 Task.TaskStatus.GENERATE,
                 null,
-                ret.substring(6)
+                null,
+                ilCode.getGeneratedILCode()
                 )
         );
     }

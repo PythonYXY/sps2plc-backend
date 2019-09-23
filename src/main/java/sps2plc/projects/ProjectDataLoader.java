@@ -24,5 +24,6 @@ public class ProjectDataLoader implements CommandLineRunner {
         log.info("Preloading " + this.projectRepository.save(new Project("电动机单相全波整流能耗制动控制", "")));
         log.info("Preloading " + this.projectRepository.save(new Project("故障报警控制系统", "")));
         log.info("Preloading " + this.projectRepository.save(new Project("M7475型立轴圆台平面磨床控制", "")));
+        log.info("Preloading " + this.projectRepository.save(new Project("project-4", "")));
     }
 }

@@ -16,7 +16,7 @@ public class SPS2PLC implements ExpressionVisitor {
 
     public SPS2PLC() { }
 
-    public ILCode translate(List<Requirement> requirements, Map<String, List<String>> conflictedRequirements) {
+    public ILCode translate(List<Requirement> requirements, List<List<String>> priorityArray) {
         ilCode = new ILCode();
 
         requirements.forEach(requirement -> ilCode.addRequirement(requirement));
@@ -26,7 +26,7 @@ public class SPS2PLC implements ExpressionVisitor {
             return ilCode;
         }
 
-        if (conflictedRequirements == null) {
+        if (priorityArray == null) {
             if (ilCode.hasConflict()) return ilCode;
         }
 
@@ -43,8 +43,8 @@ public class SPS2PLC implements ExpressionVisitor {
         ilCode.replaceIntermediates();
         ilCode.replaceTimers();
 
-        if (conflictedRequirements != null) {
-            List<Expression> conflictedScopeExpression = ilCode.handleConflictedRequirements(conflictedRequirements);
+        if (priorityArray != null) {
+            List<Expression> conflictedScopeExpression = ilCode.handleConflictedRequirements(priorityArray);
             ilCode.handleConflictedScopeCodes(parseScopeExpressions(conflictedScopeExpression));
         }
         ilCode.replaceOutput();

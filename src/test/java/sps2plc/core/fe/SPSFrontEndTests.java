@@ -17,6 +17,7 @@ public class SPSFrontEndTests {
             "[3]After I0.0 until (I0.1 or I0.2), Q0.1 is false.\n" +
             "[4]After I0.1, delayL=0, delayR=30, Q0.0 is false.";
 
+    // circular dependency version: change [2] to "When M0.1, delayL=5, M0.0 is true."
     public static final String case2 = "[1]When (I0.0 and not M0.0), delayL=5, M0.1 is true.\n" +
             "[2]When (I0.0 and not M0.0), delayL=10, M0.0 is true.\n" +
             "[3]When M0.1, Q0.0 is true.\n" +
@@ -99,11 +100,11 @@ public class SPSFrontEndTests {
 
         System.out.println(ilCode.getConflictedRequirements());
 
-        Map<String, List<String>> conflictedRequirements = new HashMap<String, List<String>>() {{
-            put("Q0.0", new ArrayList<>(Arrays.asList("3", "4", "5")));
-            put("Q0.1", new ArrayList<>(Arrays.asList("6", "7")));
+        List<List<String>> priorityArray = new ArrayList<List<String>>() {{
+            add(new ArrayList<>(Arrays.asList("3", "4", "5")));
+            add(new ArrayList<>(Arrays.asList("6", "7")));
         }};
-        ILCode ilCode1 = fe.getILCode(conflictedRequirements);
+        ILCode ilCode1 = fe.getILCode(priorityArray);
 
         printRequirementsAndILCodes(ilCode1);
         System.out.println();

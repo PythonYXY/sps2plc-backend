@@ -23,11 +23,11 @@ repositories {
     mavenCentral()
 }
 
-processResources {
-   from ('frontend-build/dist/') {
-       into 'public'
-   }
-}
+//processResources {
+//   from ('frontend-build/dist/') {
+//       into 'public'
+//   }
+//}
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'

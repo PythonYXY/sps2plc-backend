@@ -27,6 +27,11 @@ public class TaskController {
         return taskService.getTask(id);
     }
 
+    /**
+     * curl -X POST localhost:8080/api/task -H "Content-Type:application/json" -d "{\"projectId\":4,\"description\":\"Claim priority of following specifications with the same object:\",\"status\":\"PRIORITY\",\"timestamp\":\"22-09-2019 16:42:58\",\"priorityArray\":[\"Q0.0:39<40<41\",\"Q0.1:42<43\"],\"conflictArray\":null,\"code\":null}"
+     * @param task
+     * @return
+     */
     @PostMapping
     public Task postTask(@RequestBody Task task) {
         return taskService.getTask(task);

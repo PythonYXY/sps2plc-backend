@@ -116,7 +116,6 @@ public class ILCode {
 
     /**
      * All timers in scope code are in the form of T*, start with T37
-     * @param requirements the list of requirements
      */
     public void replaceTimers()  {
         int counter = 37;
@@ -240,20 +239,20 @@ public class ILCode {
 
     /**
      * All intermediate output for conflicted requirements are in the form of M7.*
-     * @param conflictedRequirements map target to the list of conflicted requirements
+     * @param priorityArray priority of requirements provided by user
      * @return
      */
-    public List<Expression> handleConflictedRequirements(Map<String, List<String>> conflictedRequirements) {
+    public List<Expression> handleConflictedRequirements(List<List<String>> priorityArray) {
         int intermediateCounter = 0;
         int reqIdCounter = 1;
         List<Expression> ret = new ArrayList<>();
 
         Map<String, ScopeCode> req2ScopeCode = getReq2ScopeCode();
 
-        for (Map.Entry<String, List<String>> entry: conflictedRequirements.entrySet()) {
-            String target = entry.getKey();
+        for (List<String> array: priorityArray) {
+            String target = reqId2Requirement.get(array.get(0)).getTarget();
             List<Requirement> conflictedReqList = new ArrayList<>();
-            for (String reqId: entry.getValue()) conflictedReqList.add(reqId2Requirement.get(reqId));
+            for (String reqId: array) conflictedReqList.add(reqId2Requirement.get(reqId));
 
             for (Requirement req: conflictedReqList) {
                 String intermediate = "M7." + intermediateCounter++;
@@ -322,7 +321,7 @@ public class ILCode {
 
         for (String reqId: graph.getSortedResult()) {
             String code = req2ScopeCode.get(reqId).getCodes().stream().map(entry ->
-                    entry.getKey() + " " + entry.getValue()).collect(Collectors.joining("\n")
+                    entry.getKey() + "\t" + entry.getValue()).collect(Collectors.joining("\n")
             );
             generatedILCode.append(code + "\n\n");
         }

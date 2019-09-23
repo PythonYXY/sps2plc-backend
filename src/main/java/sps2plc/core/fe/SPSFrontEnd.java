@@ -91,10 +91,10 @@ public class SPSFrontEnd {
     }
 
     /**
-     * @param conflictedRequirements passed as null when the function's called for the first time.
+     * @param priorityArray priority of requirements provided by user
      * @return the ILCode object
      */
-    public ILCode getILCode(Map<String, List<String>> conflictedRequirements) {
-        return new SPS2PLC().translate(getRequirements(), conflictedRequirements);
+    public ILCode getILCode(List<List<String>> priorityArray) {
+        return new SPS2PLC().translate(getRequirements(), priorityArray);
     }
 }

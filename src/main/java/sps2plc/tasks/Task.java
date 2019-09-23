@@ -15,6 +15,7 @@ public class Task {
     public enum TaskStatus {
         GENERATE,
         PRIORITY,
+        CIRCULAR
     }
 
     private @Id  @NotNull Long projectId;
@@ -27,6 +28,7 @@ public class Task {
     private Date timestamp;
 
     private @ElementCollection List<String> priorityArray;
+    private @ElementCollection List<String> circularDependencyArray;
 
     @Column(columnDefinition = "TEXT")
     private String code;
@@ -36,22 +38,25 @@ public class Task {
 
     }
 
-    public Task(@NotNull Long projectId, String description, TaskStatus status, Date timestamp, List<String> priorityArray, String code) {
+    public Task(@NotNull Long projectId, String description, TaskStatus status, Date timestamp, List<String> priorityArray, List<String> circularDependencyArray, String code) {
         this.projectId = projectId;
         this.description = description;
         this.status = status;
         this.timestamp = timestamp;
         this.priorityArray = priorityArray;
+        this.circularDependencyArray = circularDependencyArray;
         this.code = code;
+
 
     }
 
-    public Task(Long projectId, String description, TaskStatus status,  List<String> priorityArray, String code) {
+    public Task(Long projectId, String description, TaskStatus status,  List<String> priorityArray, List<String> circularDependencyArray, String code) {
         this.projectId = projectId;
         this.description = description;
         this.status = status;
         this.timestamp = new Date();
         this.priorityArray = priorityArray;
+        this.circularDependencyArray = circularDependencyArray;
         this.code = code;
     }
 
