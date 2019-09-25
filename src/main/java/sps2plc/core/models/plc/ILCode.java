@@ -259,6 +259,7 @@ public class ILCode {
                 req.setTarget(intermediate);
 
                 String output = req2ScopeCode.get(req.getReqId()).getOutput();
+                req2ScopeCode.get(req.getReqId()).setOutput(intermediate);
                 for (AbstractMap.SimpleEntry<String, String> line: req2ScopeCode.get(req.getReqId()).getCodes()) {
                     if (line.getValue().equals(output)) line.setValue(intermediate);
                 }
