@@ -48,11 +48,19 @@ public class ILCode {
     public String getGeneratedILCode() { return generatedILCode.toString(); }
 
     private Map<String, ScopeCode> getReq2ScopeCode() {
-        Map<String, ScopeCode> req2ScopeCode = new LinkedHashMap<>();
+        Map<String, ScopeCode> req2ScopeCode = new HashMap<>();
         for (int index = 0; index < scopeCodes.size(); index++) {
             req2ScopeCode.put(requirements.get(index).getReqId(), scopeCodes.get(index));
         }
         return req2ScopeCode;
+    }
+
+    private Map<String, Requirement> getReqId2Requirement() {
+        Map<String, Requirement> reqId2Requirement = new HashMap<>();
+        for (Requirement requirement : requirements) {
+            reqId2Requirement.put(requirement.getReqId(), requirement);
+        }
+        return reqId2Requirement;
     }
 
     public void addRequirement(Requirement requirement) {
@@ -157,6 +165,7 @@ public class ILCode {
         Graph graph = new Graph();
         for (int i = 0; i < requirements.size(); i++) {
             for (int j = i + 1; j < requirements.size(); j++) {
+
                 if (requirements.get(i).isDependsOn(requirements.get(j))) {
 //                    System.out.println("add edge:" + requirements.get(j).getReqId() + ", " + requirements.get(i).getReqId());
                     graph.addEdge(requirements.get(j).getReqId(), requirements.get(i).getReqId());
@@ -296,6 +305,7 @@ public class ILCode {
             Property property = new Property(Property.Type.UNIVERSALITY, new VariableExpression(target));
             Requirement newRequirement = new Requirement(scope, property);
             newRequirement.setReqId("E" + reqIdCounter++);
+            newRequirement.setText("Priority combination code: (" + String.join("<", array) + ")");
             requirements.add(newRequirement);
             ret.add(scopeExpr);
         }
@@ -313,14 +323,70 @@ public class ILCode {
         }
     }
 
+    /**
+     * All intermediate output for interlocked requirements are in the form of M8.*
+     * @param interlockRequirements the list of requirement with interlock property
+     */
+    public void handleInterlock(List<Requirement> interlockRequirements) {
+        int counter = 0;
+        Map<String, ScopeCode> req2ScopeCode = getReq2ScopeCode();
+
+        for (Requirement interlockRequirement: interlockRequirements) {
+            List<String> intermediates = new ArrayList<>(Arrays.asList("M8." + counter++, "M8." + counter++));
+            List<String> targets = new ArrayList<>();
+
+            for (int i = 0; i < 2; i++) {
+                String target = interlockRequirement.getProperty().getExpression().getVariables().get(i);
+                targets.add(target);
+                for (Requirement requirement: requirements) {
+                    if (requirement.getProperty().getExpression().getVariables().get(0).equals(target)) {
+                        requirement.setTarget(intermediates.get(i));
+
+                        String anotherTarget = interlockRequirement.getProperty().getExpression().getVariables().get(1 - i);
+                        final int finalI = i;
+                        requirement.getScope().getExpressions().forEach(expr -> expr.replaceVariableExpression(target, intermediates.get(finalI)));
+                        requirement.getScope().getExpressions().forEach(expr -> expr.replaceVariableExpression(anotherTarget, intermediates.get(1 - finalI)));
+
+                        ScopeCode scopeCode = req2ScopeCode.get(requirement.getReqId());
+                        scopeCode.setOutput(intermediates.get(i));
+                        for (Map.Entry<String, String> line: scopeCode.getCodes()) {
+                            if (line.getValue().equals(target)) line.setValue(intermediates.get(i));
+                            if (line.getValue().equals(anotherTarget)) line.setValue(intermediates.get(1 - i));
+                        }
+                        interlockRequirement.getScope().getExpressions().add(new VariableExpression(intermediates.get(i)));
+                        break;
+                    }
+                }
+            }
+
+            ScopeCode scopeCode = new ScopeCode();
+            scopeCode.setCodes(new ArrayList<>(Arrays.asList(
+                    new AbstractMap.SimpleEntry<>("LDN", intermediates.get(1)),
+                    new AbstractMap.SimpleEntry<>("O", targets.get(0)),
+                    new AbstractMap.SimpleEntry<>("A", intermediates.get(0)),
+                    new AbstractMap.SimpleEntry<>("=", targets.get(0)),
+                    new AbstractMap.SimpleEntry<>("LDN", intermediates.get(0)),
+                    new AbstractMap.SimpleEntry<>("O", targets.get(1)),
+                    new AbstractMap.SimpleEntry<>("A", intermediates.get(1)),
+                    new AbstractMap.SimpleEntry<>("=", targets.get(1))
+            )));
+
+            interlockRequirement.setText("Interlock code (" + targets.get(0) + " and " + targets.get(1) + ")");
+            requirements.add(interlockRequirement);
+            scopeCodes.add(scopeCode);
+        }
+    }
+
     public void generateILCode() {
         Graph graph = generateDependencyGraph(requirements);
         Map<String, ScopeCode> req2ScopeCode = getReq2ScopeCode();
+        Map<String, Requirement> reqId2Requirement = getReqId2Requirement();
         graph.topologicalSort();
 
-        generatedILCode.append("This is the IL code for the PLC program.\n\n");
+        generatedILCode.append("// This is the IL code for the PLC program.\n\n");
 
         for (String reqId: graph.getSortedResult()) {
+            generatedILCode.append("// " + reqId2Requirement.get(reqId).getText() + '\n');
             String code = req2ScopeCode.get(reqId).getCodes().stream().map(entry ->
                     entry.getKey() + "\t" + entry.getValue()).collect(Collectors.joining("\n")
             );

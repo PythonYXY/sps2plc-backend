@@ -12,24 +12,118 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarBaseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$AbsenceContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$AbsenceContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$BooleanExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$BooleanExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$BracketExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$BracketExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$DelayOnBothSidesContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$DelayOnBothSidesContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$DelayWithEndContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$DelayWithEndContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$DelayWithoutEndContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$DelayWithoutEndContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$ExistenceContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$ExistenceContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$ExprContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$ExprContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$NumberContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$NumberContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$NumberExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$NumberExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$PositiveIntContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$PositiveIntContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$PropertyContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$PropertyContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$UnaryExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$UnaryExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$UniversalityContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$UniversalityContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$VariableExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$VariableExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/plc/ILCode$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/plc/ILCode$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/plc/ILCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/plc/ILCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Property$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Property$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Property$Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Property$Type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Property.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Property.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/PropertyVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/PropertyVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Requirement.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Requirement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Scope$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Scope$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Scope$Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Scope$Type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Scope.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Scope.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/BooleanExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/BooleanExpression.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/Expression.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/Expression.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/NumberExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/NumberExpression.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/UnaryExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/UnaryExpression.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/VariableExpression$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/VariableExpression$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/VariableExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/VariableExpression.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/translators/SPS2PLC.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/translators/SPS2PLC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/requirements/RequirementDataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/requirements/RequirementDataLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/tasks/TaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/tasks/TaskService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/sps2plc/core/fe/SPSFrontEndTests$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/sps2plc/core/fe/SPSFrontEndTests$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/sps2plc/core/fe/SPSFrontEndTests$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/sps2plc/core/fe/SPSFrontEndTests$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/sps2plc/core/fe/SPSFrontEndTests$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/sps2plc/core/fe/SPSFrontEndTests$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/sps2plc/core/fe/SPSFrontEndTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/sps2plc/core/fe/SPSFrontEndTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/java-gradle-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/java-gradle-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/sps2plc.core.fe.SPSFrontEndTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/sps2plc.core.fe.SPSFrontEndTests.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/sps2plc.core.fe.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/sps2plc.core.fe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/pattern_to_plc.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/pattern_to_plc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-sps2plc.core.fe.SPSFrontEndTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-sps2plc.core.fe.SPSFrontEndTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-build/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-build/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-gradle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-gradle.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-gradle.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/java-gradle.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-gradle.iws" beforeDir="false" afterPath="$PROJECT_DIR$/java-gradle.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/antlr/RequirementGrammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/antlr/RequirementGrammar.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/SPSFrontEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/SPSFrontEnd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/SpsParserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/SpsParserException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/Context.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammar.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammar.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammar.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammar.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/ThrowingErrorListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/ThrowingErrorListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/plc/ILCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/plc/ILCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/plc/ScopeCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/plc/ScopeCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Delay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Delay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/DelayVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/DelayVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Property.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/PropertyVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/PropertyVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Requirement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Requirement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Scope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Scope.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/ScopeVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/ScopeVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/BooleanExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/BooleanExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/Expression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/ExpressionVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/ExpressionVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/NumberExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/NumberExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/UnaryExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/UnaryExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/VariableExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/VariableExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/translators/Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/translators/Pattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/translators/SPS2PLC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/translators/SPS2PLC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/utils/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/utils/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOTableController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOTableDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOTableDataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOTableRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOTableRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOTableService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOTableService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementDataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/tasks/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/tasks/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pattern_to_plc.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pattern_to_plc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/sps2plc/core/fe/SPSFrontEndTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sps2plc/core/fe/SPSFrontEndTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sps2plc/core/models/ScopeCodeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sps2plc/core/models/ScopeCodeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sps2plc/core/utils/GraphTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sps2plc/core/utils/GraphTests.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.gradle/" />
-    <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,61 +177,6 @@
       </state>
     </system>
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/sps2plc/core/fe/SPSFrontEndTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-258">
-              <caret line="169" column="38" selection-start-line="169" selection-start-column="38" selection-end-line="169" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementDataLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="100" column="82" lean-forward="true" selection-start-line="100" selection-start-column="82" selection-end-line="100" selection-end-column="82" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/antlr/RequirementGrammar.g4">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="6" column="3" selection-start-line="6" selection-end-line="6" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -145,72 +184,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>repository</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>this.requirementService</replace>
-      <replace>this.requirementRepository</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOTableRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOTableService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOTableController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOMap.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/projects/LoadProjectDatabase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/LoadIOTableDatabase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/DataLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/requirements/LoadRequirementDatabase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/requirements/DataLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/projects/DataLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOTableDataLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/utils/Graph.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/Context.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarBaseListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/SpsParserException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/ThrowingErrorListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/models/plc/ScopeCode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/BooleanExpression.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/Expression.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/ExpressionVisitor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/NumberExpression.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/UnaryExpression.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/VariableExpression.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Delay.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/DelayVisitor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Property.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/PropertyVisitor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Requirement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Scope.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/ScopeVisitor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/models/translators/Pattern.java" />
-        <option value="$PROJECT_DIR$/src/test/java/sps2plc/core/models/ScopeCodeTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/sps2plc/core/utils/GraphTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/projects/ProjectDataLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/tasks/TaskController.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/tasks/Task.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/SPSFrontEnd.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/tasks/TaskService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/models/translators/SPS2PLC.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/core/models/plc/ILCode.java" />
-        <option value="$PROJECT_DIR$/src/test/java/sps2plc/core/fe/SPSFrontEndTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementDataLoader.java" />
-      </list>
-    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="53" />
@@ -222,209 +197,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="antlr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sps2plc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sps2plc" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sps2plc" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="fe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sps2plc" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="fe" type="462c0819:PsiDirectoryNode" />
-              <item name="sps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sps2plc" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sps2plc" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="plc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sps2plc" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="translators" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sps2plc" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sps2plc" type="462c0819:PsiDirectoryNode" />
-              <item name="requirements" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sps2plc" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sps2plc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sps2plc" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sps2plc" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="fe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sps2plc" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-gradle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sps2plc-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sps2plc" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
+    <property name="$PROJECT_DIR$/src/antlr/RequirementGrammar.g4::/auto-gen" value="false" />
+    <property name="$PROJECT_DIR$/src/antlr/RequirementGrammar.g4::/gen-listener" value="true" />
+    <property name="$PROJECT_DIR$/src/antlr/RequirementGrammar.g4::/gen-visitor" value="false" />
+    <property name="$PROJECT_DIR$/src/antlr/RequirementGrammar.g4::/output-dir" value="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser" />
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -548,12 +325,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SPSFrontEndTests.testTemp" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SPSFrontEndTests.testInterlock" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;sps2plc.core.fe.SPSFrontEndTests.testTemp&quot;" />
+        <option name="scriptParameters" value="--tests &quot;sps2plc.core.fe.SPSFrontEndTests.testInterlock&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -583,11 +360,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SPSFrontEndTests.testInterlock" />
         <item itemvalue="Gradle.SPSFrontEndTests.testCircularDependency" />
         <item itemvalue="Gradle.SPSFrontEndTests.testCase2" />
         <item itemvalue="Gradle.SPSFrontEndTests.testCase1" />
         <item itemvalue="Gradle.SPSFrontEndTests.testConflictedRequirements" />
-        <item itemvalue="Gradle.SPSFrontEndTests.testTemp" />
       </list>
     </recent_temporary>
   </component>
@@ -599,7 +376,7 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@6dceb8cd" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@46a4e2dc" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -677,80 +454,9 @@
       <workItem from="1569223657263" duration="34000" />
       <workItem from="1569224122982" duration="3046000" />
       <workItem from="1569324713556" duration="11637000" />
+      <workItem from="1569664339722" duration="12262000" />
     </task>
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="SPSFrontEndTests_testCircularDependency - 2019.09.24 at 21h 49m 28s.xml">
-      <configuration name="SPSFrontEndTests.testCircularDependency" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="SPSFrontEndTests_testCircularDependency - 2019.09.24 at 21h 50m 33s.xml">
-      <configuration name="SPSFrontEndTests.testCircularDependency" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="SPSFrontEndTests_testCircularDependency - 2019.09.24 at 22h 29m 03s.xml">
-      <configuration name="SPSFrontEndTests.testCircularDependency" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="SPSFrontEndTests_testCircularDependency - 2019.09.25 at 14h 33m 29s.xml">
-      <configuration name="SPSFrontEndTests.testCircularDependency" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="SPSFrontEndTests_testCircularDependency - 2019.09.25 at 14h 35m 27s.xml">
-      <configuration name="SPSFrontEndTests.testCircularDependency" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="SPSFrontEndTests_testCircularDependency - 2019.09.25 at 14h 50m 47s.xml">
-      <configuration name="SPSFrontEndTests.testCircularDependency" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="SPSFrontEndTests_testCircularDependency - 2019.09.25 at 14h 51m 44s.xml">
-      <configuration name="SPSFrontEndTests.testCircularDependency" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="SPSFrontEndTests_testCircularDependency - 2019.09.25 at 14h 59m 00s.xml">
-      <configuration name="SPSFrontEndTests.testCircularDependency" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="SPSFrontEndTests_testCircularDependency - 2019.09.25 at 14h 59m 30s.xml">
-      <configuration name="SPSFrontEndTests.testCircularDependency" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="SPSFrontEndTests_testCircularDependency - 2019.09.25 at 15h 02m 55s.xml">
-      <configuration name="SPSFrontEndTests.testCircularDependency" configurationId="GradleRunConfiguration" />
-    </history-entry>
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55171000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.110341154" />
-      <window_info id="Structure" order="1" sideWeight="0.5010846" side_tool="true" weight="0.14072494" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Web" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.44685465" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Tool Output" order="8" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="9" visible="true" weight="0.4110629" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.22234273" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.329718" />
-      <window_info anchor="bottom" id="Build" order="13" weight="0.32848486" />
-      <window_info anchor="bottom" id="ANTLR Preview" order="14" weight="0.329718" />
-      <window_info anchor="bottom" id="Spring" order="15" />
-      <window_info anchor="bottom" id="Docker" order="16" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Java Enterprise" order="17" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Gradle" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32938242" />
-      <window_info anchor="right" id="Bean Validation" order="7" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -761,12 +467,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -793,399 +493,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/sps2plc-frontend" />
     </ignored-roots>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/projects/ProjectController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/SpsToPlc_final.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOTableDataLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="60" column="92" selection-start-line="60" selection-start-column="92" selection-end-line="60" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/Context.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammar.interp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammar.tokens">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarBaseListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.interp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.tokens">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/ThrowingErrorListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/SpsParserException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/models/plc/ScopeCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/BooleanExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/Expression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/ExpressionVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/NumberExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/UnaryExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/VariableExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/utils/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/models/translators/Pattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/ScopeVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Scope.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Requirement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/PropertyVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Property.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/DelayVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Delay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/projects/ProjectRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/projects/ProjectService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/sps2plc/core/models/ScopeCodeTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11/lib/src.zip!/java.base/java/util/function/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/projects/ProjectDataLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/tasks/TaskController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/Sps2plcApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#310#311#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/requirements/Requirement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/models/plc/ILCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="260" column="78" lean-forward="true" selection-start-line="260" selection-start-column="78" selection-end-line="260" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/tasks/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/tasks/TaskService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/fe/SPSFrontEnd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/sps2plc/core/utils/GraphTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/core/models/translators/SPS2PLC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="46" column="92" selection-start-line="46" selection-start-column="64" selection-end-line="46" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/antlr/RequirementGrammar.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="3" selection-start-line="6" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/sps2plc/core/fe/SPSFrontEndTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-258">
-          <caret line="169" column="38" selection-start-line="169" selection-start-column="38" selection-end-line="169" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementDataLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="100" column="82" lean-forward="true" selection-start-line="100" selection-start-column="82" selection-end-line="100" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>

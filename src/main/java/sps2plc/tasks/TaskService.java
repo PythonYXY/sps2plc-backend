@@ -51,7 +51,7 @@ public class TaskService {
                 String repStr = ioMap.containsKey(m.group(0)) ? ioMap.get(m.group(0)) : m.group(0);
                 temp = temp.replace(m.group(0), repStr);
             }
-            System.out.println(temp);
+            System.out.println("[" + requirement.getId() + "]" + temp);
 
             ret.append('[' + String.valueOf(requirement.getId()) + ']' + temp + '\n');
         });
@@ -60,10 +60,22 @@ public class TaskService {
 
     public Task getTask(Long projId) {
         this.reqArray = this.requirementService.getProjectRequirementsEnabled(projId);
+        ILCode ilCode;
 
-        SPSFrontEnd fe = new SPSFrontEnd();
-        fe.parseString(preprocessRequirement(projId, this.reqArray));
-        ILCode ilCode = fe.getILCode(null);
+        try {
+            SPSFrontEnd fe = new SPSFrontEnd();
+            fe.parseString(preprocessRequirement(projId, this.reqArray));
+            ilCode = fe.getILCode(null);
+        } catch (Exception err) {
+            return new Task(
+                    projId,
+                    "Error",
+                    Task.TaskStatus.GENERATE,
+                    null,
+                    null,
+                    err.toString()
+            );
+        }
 
         if (!ilCode.getCircularDependencyRequirements().isEmpty()) {
             return new Task(
@@ -109,9 +121,21 @@ public class TaskService {
         List<List<String>> priorityArray = new ArrayList<>();
         task.getPriorityArray().forEach(priority -> priorityArray.add(Arrays.asList(priority.split("<"))));
 
-        SPSFrontEnd fe = new SPSFrontEnd();
-        fe.parseString(preprocessRequirement(task.getProjectId(), reqArray));
-        ILCode ilCode = fe.getILCode(priorityArray);
+        ILCode ilCode;
+        try {
+            SPSFrontEnd fe = new SPSFrontEnd();
+            fe.parseString(preprocessRequirement(task.getProjectId(), reqArray));
+            ilCode = fe.getILCode(priorityArray);
+        } catch (Exception err) {
+            return new Task(
+                    task.getProjectId(),
+                    "Error",
+                    Task.TaskStatus.GENERATE,
+                    null,
+                    null,
+                    err.toString()
+            );
+        }
 
         return taskRepository.save(new Task(
                 task.getProjectId(),

@@ -83,11 +83,11 @@ public class Requirement {
     }
 
     public boolean isDependsOn(Requirement requirement) {
-        String target = ((VariableExpression)requirement.getProperty().getExpression()).getName();
+        List<String> targets = requirement.getProperty().getExpression().getVariables();
 
         for (Expression expr: getScope().getExpressions()) {
             for (String var: expr.getVariables()) {
-                if (var.equals(target)) return true;
+                if (targets.contains(var)) return true;
             }
         }
         return false;

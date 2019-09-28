@@ -5,7 +5,7 @@ import java.util.List;
 
 public class VariableExpression extends Expression {
 
-    private final String name;
+    private String name;
 
     public VariableExpression(String name) { this.name = name; }
 
@@ -20,6 +20,11 @@ public class VariableExpression extends Expression {
     @Override
     public Expression negateExpression() {
         return new UnaryExpression(new VariableExpression(name), UnaryExpression.Operator.NOT);
+    }
+
+    @Override
+    public void replaceVariableExpression(String oldVar, String newVar) {
+        if (name.equals(oldVar)) name = newVar;
     }
 
     @Override

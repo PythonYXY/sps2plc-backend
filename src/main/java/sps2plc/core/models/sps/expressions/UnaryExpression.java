@@ -56,6 +56,9 @@ public class UnaryExpression extends Expression {
     }
 
     @Override
+    public void replaceVariableExpression(String oldVar, String newVar) { expr.replaceVariableExpression(oldVar, newVar);}
+
+    @Override
     public List<String> getVariables() {
         return expr.getVariables();
     }

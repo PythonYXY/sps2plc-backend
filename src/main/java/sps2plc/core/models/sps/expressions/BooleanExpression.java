@@ -64,6 +64,12 @@ public class BooleanExpression extends Expression{
     }
 
     @Override
+    public void replaceVariableExpression(String oldVar, String newVar) {
+        leftExpr.replaceVariableExpression(oldVar, newVar);
+        rightExpr.replaceVariableExpression(oldVar, newVar);
+    }
+
+    @Override
     public String toString() {
         return "(" + leftExpr.toString() + " " + operator + " " + rightExpr.toString() + ")";
     }

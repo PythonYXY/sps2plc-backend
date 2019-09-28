@@ -7,4 +7,6 @@ public interface PropertyVisitor {
     void visitAbsenceProperty(Property property);
 
     void visitExistenceProperty(Property property);
+
+    void visitInterlockProperty(Property property);
 }

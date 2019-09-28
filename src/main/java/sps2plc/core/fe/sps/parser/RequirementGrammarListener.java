@@ -1,4 +1,4 @@
-// Generated from C:/Users/maps/Desktop/java-antlr/src/antlr\RequirementGrammar.g4 by ANTLR 4.7.2
+// Generated from /Users/yaoxinyan/Public/sps2plc/sps2plc-backend/src/antlr/RequirementGrammar.g4 by ANTLR 4.7.2
 
     package sps2plc.core.fe.sps.parser;
 
@@ -129,6 +129,16 @@ public interface RequirementGrammarListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitExistence(RequirementGrammarParser.ExistenceContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link RequirementGrammarParser#interlock}.
+	 * @param ctx the parse tree
+	 */
+	void enterInterlock(RequirementGrammarParser.InterlockContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RequirementGrammarParser#interlock}.
+	 * @param ctx the parse tree
+	 */
+	void exitInterlock(RequirementGrammarParser.InterlockContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code BracketExpression}
 	 * labeled alternative in {@link RequirementGrammarParser#expr}.

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="sps2plc.core.utils.GraphTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-09-28T14:06:38" hostname="yaoxinyandeMacBook-Pro.local" time="0.013">
+  <properties/>
+  <testcase name="testGetCircleDependency1()" classname="sps2plc.core.utils.GraphTests" time="0.003"/>
+  <testcase name="testGetCircleDependency2()" classname="sps2plc.core.utils.GraphTests" time="0.001"/>
+  <testcase name="testGetCircleDependency3()" classname="sps2plc.core.utils.GraphTests" time="0.002"/>
+  <testcase name="testNoCircleDependency()" classname="sps2plc.core.utils.GraphTests" time="0.001"/>
+  <testcase name="testCircleDependency4()" classname="sps2plc.core.utils.GraphTests" time="0.001"/>
+  <testcase name="testCircleDependency5()" classname="sps2plc.core.utils.GraphTests" time="0.001"/>
+  <system-out><![CDATA[[[1, 3, 4]]
+{1=[3], 3=[4], 4=[1]}
+[[1, 3, 4, 5], [6, 7]]
+{1=[5], 3=[4], 4=[1], 5=[3], 6=[7], 7=[6]}
+[[1, 2]]
+[]
+{1=[2], 2=[1]}
+[]
+[1, 2, 5, 3, 4]
+[[17, 18]]
+{17=[18], 18=[17]}
+[[6, 7], [17, 18]]
+{6=[7], 17=[18], 7=[6], 18=[17]}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

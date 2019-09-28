@@ -11,7 +11,8 @@ public class Scope {
         GLOBALLY,
         AFTER,
         AFTER_UNTIL,
-        WHEN
+        WHEN,
+        INTERLOCK
     }
 
     private final Type type;

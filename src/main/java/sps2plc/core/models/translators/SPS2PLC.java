@@ -1,6 +1,7 @@
 package sps2plc.core.models.translators;
 
 import sps2plc.core.models.plc.ILCode;
+import sps2plc.core.models.sps.Property;
 import sps2plc.core.models.sps.Requirement;
 import sps2plc.core.models.sps.expressions.*;
 
@@ -18,8 +19,15 @@ public class SPS2PLC implements ExpressionVisitor {
 
     public ILCode translate(List<Requirement> requirements, List<List<String>> priorityArray) {
         ilCode = new ILCode();
+        List<Requirement> interlockRequirements = new ArrayList<>();
 
-        requirements.forEach(requirement -> ilCode.addRequirement(requirement));
+        requirements.forEach(requirement -> {
+            if (requirement.getProperty().getType() == Property.Type.INTERLOCK) {
+                interlockRequirements.add(requirement);
+            } else {
+                ilCode.addRequirement(requirement);
+            }
+        });
 
         if (ilCode.hasCircularDependency()) {
             System.out.println("Circular dependency detected!");
@@ -30,7 +38,7 @@ public class SPS2PLC implements ExpressionVisitor {
             if (ilCode.hasConflict()) return ilCode;
         }
 
-        for (Requirement requirement: requirements) {
+        for (Requirement requirement: ilCode.getRequirements()) {
             Pattern pattern = patternMap.get(requirement.key());
             if (pattern == null) {
                 throw new RuntimeException("Pattern " + requirement.key() + " not found!");
@@ -48,6 +56,7 @@ public class SPS2PLC implements ExpressionVisitor {
             ilCode.handleConflictedScopeCodes(parseScopeExpressions(conflictedScopeExpression));
         }
         ilCode.replaceOutput();
+        ilCode.handleInterlock(interlockRequirements);
         ilCode.generateILCode();
 
         return ilCode;

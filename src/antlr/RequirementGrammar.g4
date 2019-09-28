@@ -1,7 +1,7 @@
 grammar RequirementGrammar;
 
 @header {
-    package core.fe.sps.parser;
+    package sps2plc.core.fe.sps.parser;
 }
 
 list: requirement+;
@@ -10,15 +10,16 @@ requirement: reqID? (scope ',') (delay ',')? property '.';
 reqID: '[' number ']';
 scope: 'Globally' | 'After' expr | 'After' expr 'until' expr | 'When' expr;
 delay: delayWithEnd | delayWithoutEnd | delayOnBothSides;
-property: universality | absence | existence;
+property: universality | absence | existence | interlock;
 
 delayWithEnd: 'delayL' '=' expr ',' 'delayR' '=' expr;
 delayWithoutEnd: 'delayL' '=' expr;
 delayOnBothSides: 'delayL' '=' expr ',' 'delayRE' '=' expr;
 
-universality: expr 'is' 'true';
-absence: expr 'is' 'false';
-existence: expr 'exists';
+universality: ID 'is' 'true';
+absence: ID 'is' 'false';
+existence: ID 'exists';
+interlock: '(' ID 'and' ID ')' 'is' 'false';
 
 expr
     : '(' expr ')'                                  #BracketExpression

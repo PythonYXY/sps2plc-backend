@@ -14,4 +14,6 @@ abstract public class Expression {
     public abstract Expression negateExpression();
 
     public abstract List<String> getVariables();
+
+    public abstract void replaceVariableExpression(String oldVar, String newVar);
 }

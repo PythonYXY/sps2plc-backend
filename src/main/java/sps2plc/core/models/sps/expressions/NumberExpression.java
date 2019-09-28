@@ -32,4 +32,6 @@ public class NumberExpression extends Expression {
         throw new RuntimeException("Number expression does not have variables!");
     }
 
+    @Override
+    public void replaceVariableExpression(String oldVar, String newVar) { throw new RuntimeException("Number expression does not have variables!"); }
 }

@@ -1,4 +1,4 @@
-// Generated from C:/Users/maps/Desktop/java-antlr/src/antlr\RequirementGrammar.g4 by ANTLR 4.7.2
+// Generated from /Users/yaoxinyan/Public/sps2plc/sps2plc-backend/src/antlr/RequirementGrammar.g4 by ANTLR 4.7.2
 
     package sps2plc.core.fe.sps.parser;
 
@@ -157,6 +157,18 @@ public class RequirementGrammarBaseListener implements RequirementGrammarListene
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitExistence(RequirementGrammarParser.ExistenceContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterInterlock(RequirementGrammarParser.InterlockContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitInterlock(RequirementGrammarParser.InterlockContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

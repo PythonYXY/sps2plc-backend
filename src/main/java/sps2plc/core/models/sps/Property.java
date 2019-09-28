@@ -8,7 +8,8 @@ public class Property {
     public enum Type {
         UNIVERSALITY,
         ABSENCE,
-        EXISTENCE
+        EXISTENCE,
+        INTERLOCK
     }
 
     private final Type type;
@@ -29,6 +30,7 @@ public class Property {
     }
 
     public void setExpression(String target) {
+        if (type == Type.INTERLOCK) throw new RuntimeException("set expression to INTERLOCK property.");
         expression = new VariableExpression(target);
     }
 
@@ -43,6 +45,8 @@ public class Property {
             case EXISTENCE:
                 visitor.visitExistenceProperty(this);
                 break;
+            case INTERLOCK:
+                visitor.visitInterlockProperty(this);
         }
     }
 

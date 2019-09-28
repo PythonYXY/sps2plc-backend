@@ -104,15 +104,25 @@ public class RequirementBuilder extends RequirementGrammarBaseListener {
 
 
     @Override public void exitUniversality(RequirementGrammarParser.UniversalityContext ctx) {
-        property = new Property(Property.Type.UNIVERSALITY, getExpression(ctx.expr()));
+        property = new Property(Property.Type.UNIVERSALITY, new VariableExpression(ctx.ID().getText()));
     }
 
     @Override public void exitAbsence(RequirementGrammarParser.AbsenceContext ctx) {
-        property = new Property(Property.Type.ABSENCE, getExpression(ctx.expr()));
+        property = new Property(Property.Type.ABSENCE, new VariableExpression(ctx.ID().getText()));
     }
 
     @Override public void exitExistence(RequirementGrammarParser.ExistenceContext ctx) {
-        property = new Property(Property.Type.EXISTENCE, getExpression(ctx.expr()));
+        property = new Property(Property.Type.EXISTENCE, new VariableExpression(ctx.ID().getText()));
+    }
+
+    @Override public void exitInterlock(RequirementGrammarParser.InterlockContext ctx) {
+        scope = new Scope(Scope.Type.INTERLOCK, new ArrayList<>());
+
+        property = new Property(Property.Type.INTERLOCK, new BooleanExpression(
+                new VariableExpression(ctx.ID().get(0).getText()),
+                new VariableExpression(ctx.ID().get(1).getText()),
+                BooleanExpression.Operator.AND
+        ));
     }
 
     @Override public void exitBracketExpression(RequirementGrammarParser.BracketExpressionContext ctx) {
