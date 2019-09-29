@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
 
@@ -42,7 +44,7 @@ public class RequirementController {
 
     @PutMapping
     public Requirement updateRequirement(@RequestBody Requirement requirement) {
-        return requirementService.createRequirement(requirement);
+        return requirementService.updateRequirement(requirement);
     }
 
     @DeleteMapping("/{id}")
@@ -53,5 +55,16 @@ public class RequirementController {
                     return new ResponseEntity<>(requirement, HttpStatus.OK);
                 })
                 .orElseGet(() -> new ResponseEntity<>(null, HttpStatus.NOT_FOUND));
+    }
+
+    @PostMapping("/file")
+    public ResponseEntity<?> singleFileUpload(@RequestParam("pId") Long projectId,
+                                              @RequestParam("file") MultipartFile file,
+                                              RedirectAttributes redirectAttributes) {
+        List<Requirement> requirements = requirementService.parseFile(file, projectId);
+        if(requirements != null)
+            return new ResponseEntity<>(requirements, HttpStatus.OK);
+        else
+            return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
     }
 }

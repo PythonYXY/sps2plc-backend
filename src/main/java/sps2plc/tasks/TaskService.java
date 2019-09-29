@@ -119,12 +119,18 @@ public class TaskService {
         this.reqArray = this.requirementService.getProjectRequirementsEnabled(task.getProjectId());
 
         List<List<String>> priorityArray = new ArrayList<>();
-        task.getPriorityArray().forEach(priority -> priorityArray.add(Arrays.asList(priority.split("<"))));
+        final StringBuilder priorities = new StringBuilder("Priorities:\n");
+        task.getPriorityArray().forEach(priority -> {
+            priorities.append(priority).append("\n");
+            priorityArray.add(Arrays.asList(priority.split("<")));
+        });
+        priorities.append("\n\n");
+        String requirements = preprocessRequirement(task.getProjectId(), reqArray);
 
         ILCode ilCode;
         try {
             SPSFrontEnd fe = new SPSFrontEnd();
-            fe.parseString(preprocessRequirement(task.getProjectId(), reqArray));
+            fe.parseString(requirements);
             ilCode = fe.getILCode(priorityArray);
         } catch (Exception err) {
             return new Task(
@@ -133,7 +139,8 @@ public class TaskService {
                     Task.TaskStatus.GENERATE,
                     null,
                     null,
-                    err.toString()
+                    err.toString(),
+                    ""
             );
         }
 
@@ -143,7 +150,8 @@ public class TaskService {
                 Task.TaskStatus.GENERATE,
                 null,
                 null,
-                ilCode.getGeneratedILCode()
+                ilCode.getGeneratedILCode(),
+                priorities.toString() + requirements
                 )
         );
     }

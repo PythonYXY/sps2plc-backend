@@ -33,6 +33,9 @@ public class Task {
     @Column(columnDefinition = "TEXT")
     private String code;
 
+    @Column(columnDefinition = "TEXT")
+    private String requirements;
+
 
     public Task() {
 
@@ -46,8 +49,6 @@ public class Task {
         this.priorityArray = priorityArray;
         this.circularDependencyArray = circularDependencyArray;
         this.code = code;
-
-
     }
 
     public Task(Long projectId, String description, TaskStatus status,  List<String> priorityArray, List<String> circularDependencyArray, String code) {
@@ -58,6 +59,17 @@ public class Task {
         this.priorityArray = priorityArray;
         this.circularDependencyArray = circularDependencyArray;
         this.code = code;
+    }
+
+    public Task(Long projectId, String description, TaskStatus status,  List<String> priorityArray, List<String> circularDependencyArray, String code, String requirements) {
+        this.projectId = projectId;
+        this.description = description;
+        this.status = status;
+        this.timestamp = new Date();
+        this.priorityArray = priorityArray;
+        this.circularDependencyArray = circularDependencyArray;
+        this.code = code;
+        this.requirements = requirements;
     }
 
 }

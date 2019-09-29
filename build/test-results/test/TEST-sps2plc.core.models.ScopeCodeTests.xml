@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="sps2plc.core.models.ScopeCodeTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-28T14:06:38" hostname="yaoxinyandeMacBook-Pro.local" time="0.004">
+<testsuite name="sps2plc.core.models.ScopeCodeTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-29T04:26:30" hostname="yaoxinyandeMacBook-Pro.local" time="0.003">
   <properties/>
-  <testcase name="ScopeCodeTest1()" classname="sps2plc.core.models.ScopeCodeTests" time="0.004"/>
+  <testcase name="ScopeCodeTest1()" classname="sps2plc.core.models.ScopeCodeTests" time="0.003"/>
   <system-out><![CDATA[expressions: 
 Q, R, 
 

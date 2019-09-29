@@ -34,7 +34,7 @@ positiveInt: POSITIVE_INT;
 
 FLOAT: '-'? ('.' DIGIT+ | DIGIT+ ('.' DIGIT*)? );
 POSITIVE_INT: DIGIT | NONZERODIGIT (DIGIT)*;
-ID: LETTER | (LETTER | DIGIT) (LETTER | DIGIT | '.')* (LETTER | DIGIT);
+ID: (LETTER | CHINESE) | (LETTER | DIGIT | CHINESE) (LETTER | DIGIT | '.' | CHINESE)* (LETTER | DIGIT | CHINESE);
 
 WS: [ \t\r\n]+ -> skip ;
 LINE_COMMENT : '#' .*? '\r'? '\n' -> skip; // Match "#" stuff '\n'
@@ -42,3 +42,4 @@ LINE_COMMENT : '#' .*? '\r'? '\n' -> skip; // Match "#" stuff '\n'
 fragment NONZERODIGIT: [1-9];
 fragment DIGIT : [0-9];
 fragment LETTER : [a-zA-Z];
+fragment CHINESE: [\u4E00-\u9FA5\uff08-\uff09];

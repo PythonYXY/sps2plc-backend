@@ -12,117 +12,48 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarBaseListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$AbsenceContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$AbsenceContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$BooleanExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$BooleanExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$BracketExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$BracketExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$DelayOnBothSidesContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$DelayOnBothSidesContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$DelayWithEndContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$DelayWithEndContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$DelayWithoutEndContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$DelayWithoutEndContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$ExistenceContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$ExistenceContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$ExprContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$ExprContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$NumberContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$NumberContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$NumberExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$NumberExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$PositiveIntContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$PositiveIntContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$PropertyContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$PropertyContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$UnaryExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$UnaryExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$UniversalityContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$UniversalityContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$VariableExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser$VariableExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/plc/ILCode$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/plc/ILCode$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/plc/ILCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/plc/ILCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Property$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Property$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Property$Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Property$Type.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Property.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Property.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/PropertyVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/PropertyVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Requirement.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Requirement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Scope$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Scope$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Scope$Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Scope$Type.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Scope.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/Scope.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/BooleanExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/BooleanExpression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/Expression.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/Expression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/NumberExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/NumberExpression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/UnaryExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/UnaryExpression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/VariableExpression$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/VariableExpression$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/VariableExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/sps/expressions/VariableExpression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/translators/SPS2PLC.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/translators/SPS2PLC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/requirements/RequirementDataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/requirements/RequirementDataLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/requirements/Requirement$ReqState.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/requirements/Requirement$ReqState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/requirements/Requirement.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/requirements/Requirement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/requirements/RequirementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/requirements/RequirementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/requirements/RequirementService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/requirements/RequirementService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/tasks/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/tasks/Task.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/tasks/TaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/tasks/TaskService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/sps2plc/core/fe/SPSFrontEndTests$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/sps2plc/core/fe/SPSFrontEndTests$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/sps2plc/core/fe/SPSFrontEndTests$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/sps2plc/core/fe/SPSFrontEndTests$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/sps2plc/core/fe/SPSFrontEndTests$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/sps2plc/core/fe/SPSFrontEndTests$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/sps2plc/core/fe/SPSFrontEndTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/sps2plc/core/fe/SPSFrontEndTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/java-gradle-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/java-gradle-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/sps2plc.core.fe.SPSFrontEndTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/sps2plc.core.fe.SPSFrontEndTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/sps2plc.core.models.ScopeCodeTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/sps2plc.core.models.ScopeCodeTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/sps2plc.core.utils.GraphTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/sps2plc.core.utils.GraphTests.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/sps2plc.core.fe.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/sps2plc.core.fe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/pattern_to_plc.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/pattern_to_plc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/sps2plc.core.models.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/sps2plc.core.models.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/sps2plc.core.utils.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/sps2plc.core.utils.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/public/3rdpartylicenses.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-sps2plc.core.fe.SPSFrontEndTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-sps2plc.core.fe.SPSFrontEndTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-sps2plc.core.models.ScopeCodeTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-sps2plc.core.models.ScopeCodeTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-sps2plc.core.utils.GraphTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-sps2plc.core.utils.GraphTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-build/dist/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-build/dist/3rdpartylicenses.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend-build/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-build/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-gradle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-gradle.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-gradle.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/java-gradle.ipr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-gradle.iws" beforeDir="false" afterPath="$PROJECT_DIR$/java-gradle.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-build/dist/main.2b39da69e9972d9c2ab4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-build/dist/main.9ccc9e82c9947076b842.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-build/dist/main.a8e0b636734e6645622f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-build/dist/main.f941b852f431a44f5ffa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-build/dist/polyfills.e445eeaa1a60c82c5b45.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/antlr/RequirementGrammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/antlr/RequirementGrammar.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/SPSFrontEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/SPSFrontEnd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/SpsParserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/SpsParserException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/Context.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammar.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammar.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammar.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammar.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarBaseListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.interp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/ThrowingErrorListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/ThrowingErrorListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/plc/ILCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/plc/ILCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/plc/ScopeCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/plc/ScopeCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Delay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Delay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/DelayVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/DelayVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Property.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/PropertyVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/PropertyVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Requirement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Requirement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Scope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Scope.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/ScopeVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/ScopeVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/BooleanExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/BooleanExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/Expression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/ExpressionVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/ExpressionVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/NumberExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/NumberExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/UnaryExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/UnaryExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/VariableExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/expressions/VariableExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/translators/Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/translators/Pattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/translators/SPS2PLC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/translators/SPS2PLC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/utils/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/utils/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOTableController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOTableDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOTableDataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOTableRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOTableRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOTableService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/ioTable/IOTableService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementDataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/Requirement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/Requirement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/tasks/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/tasks/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/tasks/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/tasks/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pattern_to_plc.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pattern_to_plc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sps2plc/core/fe/SPSFrontEndTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sps2plc/core/fe/SPSFrontEndTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sps2plc/core/models/ScopeCodeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sps2plc/core/models/ScopeCodeTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sps2plc/core/utils/GraphTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sps2plc/core/utils/GraphTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -373,12 +304,7 @@
       <serviceView>
         <option name="contentProportion" value="0.18060435" />
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@46a4e2dc" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -455,6 +381,11 @@
       <workItem from="1569224122982" duration="3046000" />
       <workItem from="1569324713556" duration="11637000" />
       <workItem from="1569664339722" duration="12262000" />
+      <workItem from="1569722376461" duration="1088000" />
+      <workItem from="1569724710212" duration="1737000" />
+      <workItem from="1569728300179" duration="102000" />
+      <workItem from="1569729280505" duration="952000" />
+      <workItem from="1569730936272" duration="313000" />
     </task>
     <servers />
   </component>

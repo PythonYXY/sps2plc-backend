@@ -383,10 +383,10 @@ public class ILCode {
         Map<String, Requirement> reqId2Requirement = getReqId2Requirement();
         graph.topologicalSort();
 
-        generatedILCode.append("// This is the IL code for the PLC program.\n\n");
+        generatedILCode.append("# This is the IL code for the PLC program.\n\n");
 
         for (String reqId: graph.getSortedResult()) {
-            generatedILCode.append("// " + reqId2Requirement.get(reqId).getText() + '\n');
+            generatedILCode.append("# " + reqId2Requirement.get(reqId).getText() + '\n');
             String code = req2ScopeCode.get(reqId).getCodes().stream().map(entry ->
                     entry.getKey() + "\t" + entry.getValue()).collect(Collectors.joining("\n")
             );
