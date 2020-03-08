@@ -3,43 +3,52 @@ package sps2plc.projects;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import sps2plc.projects.dao.ProjectMapper;
+import sps2plc.users.User;
+import sps2plc.users.UserService;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ProjectService {
 
-    ProjectRepository projectRepository;
+    private ProjectMapper projectMapper;
+    private UserService userService;
 
     @Autowired
-    public ProjectService(ProjectRepository projectRepository) {
-        this.projectRepository = projectRepository;
+    public ProjectService(ProjectMapper projectMapper, UserService userService) {
+        this.projectMapper = projectMapper;
+        this.userService = userService;
     }
 
-    /**
-     * Retrieve all projects in the database
-     * @return projects list
-     */
-    public List<Project> getProjects() {
-        return projectRepository.findAll();
+    public List<Project> getProjectsOfAuthUser() {
+        User user = userService.getAuthenticatedUser();
+        if (user == null) return new ArrayList<>();
+        return projectMapper.findByUserId(user.getId());    }
+
+
+    public Optional<Project> getProjectOfAuthUser(Long id) {
+        User user = userService.getAuthenticatedUser();
+        if (user == null) return Optional.empty();
+        Project project = projectMapper.findById(id);
+        project = project.getUserId().equals(user.getId()) ? project : null;
+        return Optional.ofNullable(project);
     }
 
-
-    /**
-     * Retrieve project with given id, if it does not exist, return error message with http status code 404.
-     * @param id
-     * @return project or err msg
-     */
-    public Project getProject(Long id) {
-        return projectRepository.findById(id).orElseThrow(() -> new ProjectNotFoundException(id));
-    }
-
-    public Project saveProject(Project project) {
-        return projectRepository.save(project);
+    public Optional<Project> saveProject(Project project) {
+        User user = userService.getAuthenticatedUser();
+        if (user == null) return Optional.empty();
+        project.setUserId(user.getId());
+        if (projectMapper.save(project) == 1) {
+            return Optional.of(project);
+        }
+        return Optional.empty();
     }
 
     public void deleteProject(Long id) {
-        projectRepository.deleteById(id);
+        projectMapper.deleteById(id);
     }
 
 }

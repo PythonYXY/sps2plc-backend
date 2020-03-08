@@ -34,22 +34,6 @@ public class Property {
         expression = new VariableExpression(target);
     }
 
-    public void accept(PropertyVisitor visitor) {
-        switch (type) {
-            case UNIVERSALITY:
-                visitor.visitUniversalityProperty(this);
-                break;
-            case ABSENCE:
-                visitor.visitAbsenceProperty(this);
-                break;
-            case EXISTENCE:
-                visitor.visitExistenceProperty(this);
-                break;
-            case INTERLOCK:
-                visitor.visitInterlockProperty(this);
-        }
-    }
-
     @Override
     public String toString() {
         return type + ", " + expression;

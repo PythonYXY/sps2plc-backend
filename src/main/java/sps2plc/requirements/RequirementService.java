@@ -7,43 +7,48 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import sps2plc.core.fe.SPSFrontEnd;
 import sps2plc.core.fe.sps.SpsParserException;
+import sps2plc.requirements.dao.RequirementMapper;
 
 import java.awt.image.ImagingOpException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.Scanner;
 
 @Service
 public class RequirementService {
-    private RequirementRepository requirementRepository;
+    private RequirementMapper requirementMapper;
 
     @Autowired
-    public RequirementService(RequirementRepository requirementRepository) {
-        this.requirementRepository = requirementRepository;
+    public RequirementService(RequirementMapper requirementMapper) {
+        this.requirementMapper = requirementMapper;
     }
 
     public List<Requirement> getProjectRequirements(Long projId) {
-        return requirementRepository.findByProjectOrderById(projId);
+        return requirementMapper.findByProjectOrderById(projId);
     }
 
     public List<Requirement> getProjectRequirementsEnabled(Long projId) {
-        return requirementRepository.findByProjectAndDisabledOrderById(projId, false);
+        return requirementMapper.findByProjectAndDisabledOrderById(projId, false);
     }
 
-    public Requirement createRequirement(Requirement req) {
-        return requirementRepository.save(req);
+    public Optional<Requirement> createRequirement(Requirement req) {
+        if (requirementMapper.save(req) == 1) {
+            return Optional.of(req);
+        }
+        return Optional.empty();
     }
 
     public void deleteRequirement(Long id) {
-        requirementRepository.deleteById(id);
+        requirementMapper.deleteById(id);
     }
 
-    public Requirement getRequirement(Long reqId) {
-        return requirementRepository.findById(reqId).orElseThrow(() -> new RequirementNotFoundException(reqId));
+    public Optional<Requirement> getRequirement(Long reqId) {
+        return Optional.ofNullable(requirementMapper.findById(reqId));
     }
 
-    public Requirement updateRequirement(Requirement requirement) {
+    public Optional<Requirement> updateRequirement(Requirement requirement) {
         SPSFrontEnd fe = new SPSFrontEnd();
         try {
             fe.parseString(requirement.getText());
@@ -53,7 +58,8 @@ public class RequirementService {
             requirement.setState(Requirement.ReqState.ERROR);
             requirement.setErrorDescription(err.toString());
         }
-        return createRequirement(requirement);
+        if (requirementMapper.updateRequirement(requirement) == 1) return Optional.of(requirement);
+        return Optional.empty();
     }
 
     public List<Requirement> parseFile(MultipartFile file, Long projectId) {
@@ -67,7 +73,7 @@ public class RequirementService {
                 if(line.isEmpty() || line.contains("#"))
                     continue;
                 Requirement req = new Requirement(line, projectId, "", Requirement.ReqState.NOT_CHECKED, false);
-                createRequirement(req);
+                createRequirement(req).orElseThrow(() -> new FailedToCreateRequirementException(req));
                 requirements.add(req);
             }
 

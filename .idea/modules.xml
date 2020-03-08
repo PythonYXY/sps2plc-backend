@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/sps2plc-backend.iml" filepath="$PROJECT_DIR$/.idea/sps2plc-backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sps2plc-backend-maven.iml" filepath="$PROJECT_DIR$/sps2plc-backend-maven.iml" />
     </modules>
   </component>
 </project>

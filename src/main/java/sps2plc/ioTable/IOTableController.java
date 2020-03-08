@@ -12,12 +12,10 @@ import java.util.List;
 @RequestMapping("/api/ioMap")
 public class IOTableController {
 
-    private IOTableRepository ioTableRepository;
     private IOTableService ioTableService;
 
     @Autowired
-    public IOTableController(IOTableRepository ioTableRepository, IOTableService ioTableService) {
-        this.ioTableRepository = ioTableRepository;
+    public IOTableController(IOTableService ioTableService) {
         this.ioTableService = ioTableService;
     }
 
@@ -29,7 +27,7 @@ public class IOTableController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteIOMap(@PathVariable("id") Long id) {
-        return ioTableRepository.findById(id)
+        return ioTableService.getIOMapById(id)
                 .map(ioMap -> {
                     ioTableService.deleteIOMap(ioMap.getId());
                     return new ResponseEntity<>(ioMap, HttpStatus.OK);

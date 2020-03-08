@@ -32,22 +32,6 @@ public class Scope {
         return expressions;
     }
 
-    public void accept(ScopeVisitor visitor) {
-        switch (type) {
-            case GLOBALLY:
-                visitor.visitGloballyScope(this);
-                break;
-            case AFTER:
-                visitor.visitAfterScope(this);
-                break;
-            case AFTER_UNTIL:
-                visitor.visitAfterUntilScope(this);
-                break;
-            case WHEN:
-                visitor.visitWhenScope(this);
-                break;
-        }
-    }
 
     @Override
     public String toString() {

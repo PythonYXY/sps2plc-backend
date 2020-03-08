@@ -33,28 +33,6 @@ public class Delay {
         return expressions;
     }
 
-    public void accept(DelayVisitor visitor) {
-        switch (type) {
-            case WITHEND_TYPE1:
-                visitor.visitWithEndType1Delay(this);
-                break;
-            case WITHEND_TYPE2:
-                visitor.visitWithEndType2Delay(this);
-                break;
-            case WITHOUTEND:
-                visitor.visitWithOutEndDelay(this);
-                break;
-            case ONBOTHSIDES_TYPE1:
-                visitor.visitOnBothSidesType1Delay(this);
-                break;
-            case ONBOTHSIDES_TYPE2:
-                visitor.visitOnBothSidesType2Delay(this);
-                break;
-            case ONBOTHSIDES_TYPE3:
-                visitor.visitOnBothSidesType3Delay(this);
-                break;
-        }
-    }
 
     @Override
     public String toString() {

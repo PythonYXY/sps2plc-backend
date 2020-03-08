@@ -12,46 +12,39 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/projects")
 public class ProjectController {
+
     ProjectService projectService;
-    ProjectRepository projectRepository;
 
     @Autowired
-    public ProjectController(ProjectService projectService, ProjectRepository projectRepository) {
+    public ProjectController(ProjectService projectService) {
         this.projectService = projectService;
-        this.projectRepository = projectRepository;
     }
 
     @GetMapping
     public List<Project> all() {
-        return projectService.getProjects();
+        return projectService.getProjectsOfAuthUser();
     }
 
     @GetMapping("/{id}")
     public Project one(@PathVariable("id") Long id) {
-        return projectService.getProject(id);
+        return projectService.getProjectOfAuthUser(id)
+                .orElseThrow(() -> new ProjectNotFoundException(id));
     }
 
-    /**
-     * curl -X POST localhost:8080/projects -H 'Content-type:application/json' -d '{"name": "project-3", "description": "nothing"}'
-     */
     @PostMapping
     public ResponseEntity<?> newProject(@Valid @RequestBody Project project) {
-        project = projectService.saveProject(project);
-
-        if (project != null) {
-            return new ResponseEntity<>(project, HttpStatus.OK);
-        }
-
-        return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+        return projectService.saveProject(project)
+                .map(project1 -> new ResponseEntity<>(project1, HttpStatus.OK))
+                .orElseGet(() -> new ResponseEntity<>(null, HttpStatus.BAD_REQUEST));
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteProject(@PathVariable("id") Long id) {
-        return projectRepository.findById(id)
+        return projectService.getProjectOfAuthUser(id)
                 .map(project -> {
                     projectService.deleteProject(id);
                     return new ResponseEntity<>(project, HttpStatus.OK);
                 })
-                .orElseGet(() -> new ResponseEntity<>(null, HttpStatus.NOT_FOUND));
+                .orElseThrow(() -> new ProjectNotFoundException(id));
     }
 }

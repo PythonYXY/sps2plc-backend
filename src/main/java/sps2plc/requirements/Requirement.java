@@ -6,7 +6,6 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 @Data
-@Entity
 public class Requirement {
 
     public enum ReqState {
@@ -15,13 +14,12 @@ public class Requirement {
         NOT_CHECKED
     }
 
-    private @Id @GeneratedValue Long id;
-    private @NotNull String text;
-    private @NotNull Long project;
+    private Long id;
+    private String text;
+    private Long project;
     private String errorDescription;
-    private @NotNull @Enumerated(EnumType.STRING) ReqState state;
-    private @NotNull Boolean disabled;
-
+    private ReqState state;
+    private Boolean disabled;
 
     public Requirement() {
 

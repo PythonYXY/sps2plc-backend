@@ -15,4 +15,9 @@ public class RequirementNotFoundAdvice {
     String RequirementNotFoundHandler(RequirementNotFoundException ex) {
         return ex.getMessage();
     }
+
+    @ResponseBody
+    @ExceptionHandler(FailedToCreateRequirementException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    String FailedToCreateRequirementHandler(FailedToCreateRequirementException ex) {return ex.getMessage(); }
 }

@@ -1,60 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f801021-f3ec-4cd0-b81a-24931eebac89" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/plc/ILCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/core/models/plc/ILCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/requirements/Requirement$ReqState.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/requirements/Requirement$ReqState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/requirements/Requirement.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/requirements/Requirement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/requirements/RequirementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/requirements/RequirementController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/requirements/RequirementService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/requirements/RequirementService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/tasks/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/tasks/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sps2plc/tasks/TaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sps2plc/tasks/TaskService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/java-gradle-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/java-gradle-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/sps2plc.core.fe.SPSFrontEndTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/sps2plc.core.fe.SPSFrontEndTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/sps2plc.core.models.ScopeCodeTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/sps2plc.core.models.ScopeCodeTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/sps2plc.core.utils.GraphTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/sps2plc.core.utils.GraphTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/sps2plc.core.fe.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/sps2plc.core.fe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/sps2plc.core.models.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/sps2plc.core.models.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/sps2plc.core.utils.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/sps2plc.core.utils.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/public/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/public/3rdpartylicenses.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-sps2plc.core.fe.SPSFrontEndTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-sps2plc.core.fe.SPSFrontEndTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-sps2plc.core.models.ScopeCodeTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-sps2plc.core.models.ScopeCodeTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-sps2plc.core.utils.GraphTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-sps2plc.core.utils.GraphTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-build/dist/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-build/dist/3rdpartylicenses.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-build/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-build/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-build/dist/main.2b39da69e9972d9c2ab4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-build/dist/main.9ccc9e82c9947076b842.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-build/dist/main.a8e0b636734e6645622f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-build/dist/main.f941b852f431a44f5ffa.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-build/dist/polyfills.e445eeaa1a60c82c5b45.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/antlr/RequirementGrammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/antlr/RequirementGrammar.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/plc/ILCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/plc/ILCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/Requirement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/Requirement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/tasks/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/tasks/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/tasks/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/tasks/TaskService.java" afterDir="false" />
-    </list>
+    <list default="true" id="9fc2a49d-a215-406b-9442-46bbd66d661e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,89 +19,99 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="sps2plc: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="sps2plc: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="iomap: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="sps2plc: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="project: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="sps2plc: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="requirement: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="sps2plc: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="task: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="sps2plc: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
     <select />
-  </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$">
-      <ProjectState />
-    </projectState>
-  </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="java-gradle" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="java-gradle" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="53" />
-    <option name="y" value="-8" />
-    <option name="width" value="1799" />
-    <option name="height" value="882" />
-  </component>
-  <component name="ProjectId" id="1P4qDD6hUseKHeeY9pjXD931UEX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1XyBcdg3eXEumed02VO7Le7VOU3" />
   <component name="PropertiesComponent">
-    <property name="$PROJECT_DIR$/src/antlr/RequirementGrammar.g4::/auto-gen" value="false" />
-    <property name="$PROJECT_DIR$/src/antlr/RequirementGrammar.g4::/gen-listener" value="true" />
-    <property name="$PROJECT_DIR$/src/antlr/RequirementGrammar.g4::/gen-visitor" value="false" />
-    <property name="$PROJECT_DIR$/src/antlr/RequirementGrammar.g4::/output-dir" value="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser" />
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/sps2plc/tasks" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="sps2plc.ioTable" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/sps2plc/tasks" />
+      <recent name="$PROJECT_DIR$/src/test/java/sps2plc/requirements/dao" />
+      <recent name="$PROJECT_DIR$/src/test/java/sps2plc/project/dao" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\maps\Desktop\sps2plc\sps2plc-backend\src\main\java\sps2plc" />
-      <recent name="C:\Users\maps\Desktop\sps2plc\sps2plc-backend\frontend-build\dist" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/js" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/target/classes/sps2plc" />
+      <recent name="$PROJECT_DIR$/target" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -173,138 +130,136 @@
         </RuleState>
       </list>
     </option>
-    <option name="contentProportion" value="0.12431694" />
   </component>
-  <component name="RunManager" selected="Spring Boot.Sps2plcApplication">
-    <configuration name="SPSFrontEndTests.testCase1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;sps2plc.core.fe.SPSFrontEndTests.testCase1&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="SPSFrontEndTests.testCase2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;sps2plc.core.fe.SPSFrontEndTests.testCase2&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="SPSFrontEndTests.testCircularDependency" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;sps2plc.core.fe.SPSFrontEndTests.testCircularDependency&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="SPSFrontEndTests.testConflictedRequirements" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;sps2plc.core.fe.SPSFrontEndTests.testConflictedRequirements&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="SPSFrontEndTests.testInterlock" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;sps2plc.core.fe.SPSFrontEndTests.testInterlock&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="Sps2plcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="java-gradle.main" />
+  <component name="RunManager" selected="Maven.sps2plc-backend [package]">
+    <configuration name="Temp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sps2plc.Temp" />
+      <module name="sps2plc-backend-maven" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sps2plc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="sps2plc.Sps2plcApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IOTableMapperTest.testFindByProjectIdOrderById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sps2plc-backend-maven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sps2plc.ioTable.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sps2plc.ioTable.dao" />
+      <option name="MAIN_CLASS_NAME" value="sps2plc.ioTable.dao.IOTableMapperTest" />
+      <option name="METHOD_NAME" value="testFindByProjectIdOrderById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectMapperTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sps2plc-backend-maven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sps2plc.projects.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sps2plc.projects.dao" />
+      <option name="MAIN_CLASS_NAME" value="sps2plc.projects.dao.ProjectMapperTest" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskMapperTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sps2plc-backend-maven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sps2plc.tasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sps2plc.tasks" />
+      <option name="MAIN_CLASS_NAME" value="sps2plc.tasks.TaskMapperTest" />
+      <option name="METHOD_NAME" value="testSave" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sps2plc-backend [package]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="package" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sps2plcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="sps2plc-backend-maven" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="sps2plc.Sps2plcApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Temp" />
+      <item itemvalue="JUnit.TaskMapperTest.testSave" />
+      <item itemvalue="JUnit.IOTableMapperTest.testFindByProjectIdOrderById" />
+      <item itemvalue="JUnit.ProjectMapperTest.testFindAll" />
+      <item itemvalue="Maven.sps2plc-backend [package]" />
+      <item itemvalue="Spring Boot.Sps2plcApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SPSFrontEndTests.testInterlock" />
-        <item itemvalue="Gradle.SPSFrontEndTests.testCircularDependency" />
-        <item itemvalue="Gradle.SPSFrontEndTests.testCase2" />
-        <item itemvalue="Gradle.SPSFrontEndTests.testCase1" />
-        <item itemvalue="Gradle.SPSFrontEndTests.testConflictedRequirements" />
+        <item itemvalue="Maven.sps2plc-backend [package]" />
+        <item itemvalue="Application.Temp" />
+        <item itemvalue="JUnit.ProjectMapperTest.testFindAll" />
+        <item itemvalue="JUnit.IOTableMapperTest.testFindByProjectIdOrderById" />
+        <item itemvalue="JUnit.TaskMapperTest.testSave" />
       </list>
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
       <serviceView>
-        <option name="contentProportion" value="0.18060435" />
+        <option name="contentProportion" value="0.07225064" />
         <treeState>
-          <expand />
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4d548e6c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4d548e6c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a47d178f" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
           <select />
         </treeState>
       </serviceView>
@@ -315,187 +270,32 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8f801021-f3ec-4cd0-b81a-24931eebac89" name="Default Changelist" comment="" />
-      <created>1563454312901</created>
+      <changelist id="9fc2a49d-a215-406b-9442-46bbd66d661e" name="Default Changelist" comment="" />
+      <created>1582008534679</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1563454312901</updated>
-      <workItem from="1563454314376" duration="192000" />
-      <workItem from="1563454579999" duration="2659000" />
-      <workItem from="1563459706928" duration="3157000" />
-      <workItem from="1563523556884" duration="262000" />
-      <workItem from="1563523840070" duration="2039000" />
-      <workItem from="1563525898062" duration="1401000" />
-      <workItem from="1563717028530" duration="137000" />
-      <workItem from="1563798164372" duration="107000" />
-      <workItem from="1563798294555" duration="371000" />
-      <workItem from="1564381173854" duration="2000" />
-      <workItem from="1564568990662" duration="194000" />
-      <workItem from="1564580012284" duration="490000" />
-      <workItem from="1564580812670" duration="1876000" />
-      <workItem from="1564584106356" duration="2458000" />
-      <workItem from="1564721192943" duration="80000" />
-      <workItem from="1564721362171" duration="12566000" />
-      <workItem from="1564820914017" duration="880000" />
-      <workItem from="1564908413874" duration="442000" />
-      <workItem from="1564995702385" duration="259000" />
-      <workItem from="1564999269173" duration="44000" />
-      <workItem from="1564999402012" duration="1297000" />
-      <workItem from="1565071795816" duration="42000" />
-      <workItem from="1565072839640" duration="1316000" />
-      <workItem from="1565143052515" duration="38000" />
-      <workItem from="1565143131585" duration="255000" />
-      <workItem from="1565143602891" duration="10384000" />
-      <workItem from="1565364194139" duration="16134000" />
-      <workItem from="1565424815975" duration="4441000" />
-      <workItem from="1565443059949" duration="67000" />
-      <workItem from="1565504331844" duration="189000" />
-      <workItem from="1565506174118" duration="108000" />
-      <workItem from="1565506705420" duration="61000" />
-      <workItem from="1565509659009" duration="112000" />
-      <workItem from="1565513595433" duration="64000" />
-      <workItem from="1565537764326" duration="85000" />
-      <workItem from="1565584256358" duration="455000" />
-      <workItem from="1565677470961" duration="292000" />
-      <workItem from="1566888913584" duration="46000" />
-      <workItem from="1567658490953" duration="488000" />
-      <workItem from="1567773672961" duration="406000" />
-      <workItem from="1567820653458" duration="184000" />
-      <workItem from="1567820861264" duration="5768000" />
-      <workItem from="1567837775330" duration="87000" />
-      <workItem from="1567838449605" duration="17000" />
-      <workItem from="1567839104698" duration="1458000" />
-      <workItem from="1567843054595" duration="1643000" />
-      <workItem from="1567846281922" duration="8855000" />
-      <workItem from="1567925801084" duration="1685000" />
-      <workItem from="1567934529711" duration="62000" />
-      <workItem from="1567935363283" duration="5803000" />
-      <workItem from="1567946011300" duration="676000" />
-      <workItem from="1568185172633" duration="13000" />
-      <workItem from="1568191748875" duration="185000" />
-      <workItem from="1568292527803" duration="114000" />
-      <workItem from="1569067631798" duration="6437000" />
-      <workItem from="1569137083788" duration="7058000" />
-      <workItem from="1569155693941" duration="409000" />
-      <workItem from="1569223657263" duration="34000" />
-      <workItem from="1569224122982" duration="3046000" />
-      <workItem from="1569324713556" duration="11637000" />
-      <workItem from="1569664339722" duration="12262000" />
-      <workItem from="1569722376461" duration="1088000" />
-      <workItem from="1569724710212" duration="1737000" />
-      <workItem from="1569728300179" duration="102000" />
-      <workItem from="1569729280505" duration="952000" />
-      <workItem from="1569730936272" duration="313000" />
+      <updated>1582008534679</updated>
+      <workItem from="1582008536239" duration="2167000" />
+      <workItem from="1582014079760" duration="8051000" />
+      <workItem from="1582207562822" duration="2480000" />
+      <workItem from="1582298460304" duration="19742000" />
+      <workItem from="1582520523680" duration="7000" />
+      <workItem from="1582552709814" duration="1884000" />
+      <workItem from="1582685324920" duration="841000" />
+      <workItem from="1582994872602" duration="7000" />
+      <workItem from="1583047425314" duration="2679000" />
+      <workItem from="1583052647434" duration="13260000" />
+      <workItem from="1583211806592" duration="1168000" />
+      <workItem from="1583413151591" duration="2982000" />
+      <workItem from="1583581262049" duration="7000" />
+      <workItem from="1583590981987" duration="628000" />
+      <workItem from="1583659006791" duration="93000" />
+      <workItem from="1583660234376" duration="4396000" />
+      <workItem from="1583670152744" duration="2938000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/sps2plc-frontend" />
-    </ignored-roots>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>main|java-gradle</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

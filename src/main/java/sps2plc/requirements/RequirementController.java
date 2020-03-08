@@ -15,12 +15,10 @@ import java.util.List;
 public class RequirementController {
 
     private RequirementService requirementService;
-    private RequirementRepository requirementRepository;
 
     @Autowired
-    public RequirementController(RequirementService requirementService, RequirementRepository requirementRepository) {
+    public RequirementController(RequirementService requirementService) {
         this.requirementService = requirementService;
-        this.requirementRepository = requirementRepository;
     }
 
     @GetMapping
@@ -30,31 +28,31 @@ public class RequirementController {
 
     @GetMapping("/{id}")
     public Requirement getRequirement(@PathVariable("id") Long reqId) {
-        return requirementService.getRequirement(reqId);
+        return requirementService.getRequirement(reqId)
+                .orElseThrow(() -> new RequirementNotFoundException(reqId));
     }
 
-    /**
-     * curl -X POST localhost:8080/requirements -H 'Content-type:application/json' -d '{"text": "When Q, delayL = 100, Q0.0 exists.", "project": 2, "errorDescription": "", "state": "COMPLIANT", "disabled": false }'
-     */
     @PostMapping
     public Requirement createRequirement(@RequestBody Requirement requirement) {
-        return requirementService.createRequirement(requirement);
+        return requirementService.createRequirement(requirement)
+                .orElseThrow(() -> new FailedToCreateRequirementException(requirement));
     }
 
 
     @PutMapping
     public Requirement updateRequirement(@RequestBody Requirement requirement) {
-        return requirementService.updateRequirement(requirement);
+        return requirementService.updateRequirement(requirement)
+                .orElseThrow(() -> new FailedToCreateRequirementException(requirement));
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteRequirement(@PathVariable("id") Long id) {
-        return requirementRepository.findById(id)
+        return requirementService.getRequirement(id)
                 .map(requirement -> {
                     requirementService.deleteRequirement(requirement.getId());
                     return new ResponseEntity<>(requirement, HttpStatus.OK);
                 })
-                .orElseGet(() -> new ResponseEntity<>(null, HttpStatus.NOT_FOUND));
+                .orElseThrow(() -> new RequirementNotFoundException(id));
     }
 
     @PostMapping("/file")

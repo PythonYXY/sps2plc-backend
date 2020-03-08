@@ -10,7 +10,6 @@ import java.util.Date;
 import java.util.List;
 
 @Data
-@Entity
 public class Task {
     public enum TaskStatus {
         GENERATE,
@@ -18,22 +17,16 @@ public class Task {
         CIRCULAR
     }
 
-    private @Id  @NotNull Long projectId;
+    private Long projectId;
     private String description;
-    private @Enumerated(EnumType.STRING) TaskStatus status;
+    private TaskStatus status;
 
-    @NotNull
-    @JsonFormat(shape = JsonFormat.Shape.STRING, timezone = "GMT+8", pattern = "dd-MM-yyyy kk:mm:ss")
-    @Temporal(TemporalType.TIMESTAMP)
     private Date timestamp;
 
-    private @ElementCollection List<String> priorityArray;
-    private @ElementCollection List<String> circularDependencyArray;
+    private List<String> priorityArray;
+    private List<String> circularDependencyArray;
 
-    @Column(columnDefinition = "TEXT")
     private String code;
-
-    @Column(columnDefinition = "TEXT")
     private String requirements;
 
 

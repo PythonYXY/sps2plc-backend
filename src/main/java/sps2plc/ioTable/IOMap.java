@@ -5,17 +5,18 @@ import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
 
 @Data
-@Entity
 public class IOMap {
 
-    private @Id @GeneratedValue Long id;
-    private @NotNull Long projectId;
+    private Long id;
+    private Long projectId;
 
+    // 这里必须显示指定Json属性名称，否则开头的几个大写字母会被自动转换成小写（尽量避免首字母大写的命名法）
     private @JsonProperty("IOName") String IOName;
     private @JsonProperty("IONumber") String IONumber;
 

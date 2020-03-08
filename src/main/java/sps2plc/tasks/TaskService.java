@@ -8,6 +8,7 @@ import sps2plc.ioTable.IOMap;
 import sps2plc.ioTable.IOTableService;
 import sps2plc.requirements.Requirement;
 import sps2plc.requirements.RequirementService;
+import sps2plc.tasks.dao.TaskMapper;
 
 import java.util.*;
 import java.util.regex.Matcher;
@@ -18,16 +19,16 @@ import java.util.stream.Collectors;
 @Service
 public class TaskService {
 
-    private TaskRepository taskRepository;
+    private TaskMapper taskMapper;
     private RequirementService requirementService;
     private List<Requirement> reqArray;
     private IOTableService ioTableService;
 
     @Autowired
-    public TaskService(TaskRepository taskRepository,
+    public TaskService(TaskMapper taskMapper,
                        RequirementService requirementService,
                        IOTableService ioTableService) {
-        this.taskRepository = taskRepository;
+        this.taskMapper = taskMapper;
         this.requirementService = requirementService;
         this.ioTableService = ioTableService;
     }
@@ -104,14 +105,17 @@ public class TaskService {
             );
         }
 
-        return taskRepository.save(new Task(
+        Task task = new Task(
                 projId,
                 "Generated IL Code",
                 Task.TaskStatus.GENERATE,
                 null,
                 null,
                 ilCode.getGeneratedILCode()
-        ));
+        );
+
+        taskMapper.save(task);
+        return task;
     }
 
 
@@ -144,7 +148,7 @@ public class TaskService {
             );
         }
 
-        return taskRepository.save(new Task(
+        Task ret = new Task(
                 task.getProjectId(),
                 "Generated IL Code",
                 Task.TaskStatus.GENERATE,
@@ -152,12 +156,13 @@ public class TaskService {
                 null,
                 ilCode.getGeneratedILCode(),
                 priorities.toString() + requirements
-                )
         );
+        taskMapper.save(ret);
+        return ret;
     }
 
     public Task getFinishedTask(Long projId) {
-        return taskRepository.findById(projId).orElse(null);
+        return taskMapper.findByProjectId(projId);
     }
 
 }
