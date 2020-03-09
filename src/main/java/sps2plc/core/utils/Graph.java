@@ -35,6 +35,11 @@ public class Graph {
         }
     }
 
+    public void addNode(String node) {
+        graph.putIfAbsent(node, new ArrayList<>());
+        inDegree.putIfAbsent(node, 0);
+    }
+
 
     public void topologicalSort() {
         int safeCounter = 0;

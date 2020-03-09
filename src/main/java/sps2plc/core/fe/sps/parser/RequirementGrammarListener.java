@@ -1,4 +1,4 @@
-// Generated from /Users/yaoxinyan/Public/sps2plc/sps2plc-backend/src/antlr/RequirementGrammar.g4 by ANTLR 4.7.2
+// Generated from /Users/yaoxinyan/Public/sps2plc/sps2plc-backend-maven/src/antlr/RequirementGrammar.g4 by ANTLR 4.8
 
     package sps2plc.core.fe.sps.parser;
 
@@ -70,15 +70,25 @@ public interface RequirementGrammarListener extends ParseTreeListener {
 	 */
 	void exitProperty(RequirementGrammarParser.PropertyContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link RequirementGrammarParser#delayWithEnd}.
+	 * Enter a parse tree produced by {@link RequirementGrammarParser#delayWithEnd1}.
 	 * @param ctx the parse tree
 	 */
-	void enterDelayWithEnd(RequirementGrammarParser.DelayWithEndContext ctx);
+	void enterDelayWithEnd1(RequirementGrammarParser.DelayWithEnd1Context ctx);
 	/**
-	 * Exit a parse tree produced by {@link RequirementGrammarParser#delayWithEnd}.
+	 * Exit a parse tree produced by {@link RequirementGrammarParser#delayWithEnd1}.
 	 * @param ctx the parse tree
 	 */
-	void exitDelayWithEnd(RequirementGrammarParser.DelayWithEndContext ctx);
+	void exitDelayWithEnd1(RequirementGrammarParser.DelayWithEnd1Context ctx);
+	/**
+	 * Enter a parse tree produced by {@link RequirementGrammarParser#delayWithEnd2}.
+	 * @param ctx the parse tree
+	 */
+	void enterDelayWithEnd2(RequirementGrammarParser.DelayWithEnd2Context ctx);
+	/**
+	 * Exit a parse tree produced by {@link RequirementGrammarParser#delayWithEnd2}.
+	 * @param ctx the parse tree
+	 */
+	void exitDelayWithEnd2(RequirementGrammarParser.DelayWithEnd2Context ctx);
 	/**
 	 * Enter a parse tree produced by {@link RequirementGrammarParser#delayWithoutEnd}.
 	 * @param ctx the parse tree
@@ -99,6 +109,16 @@ public interface RequirementGrammarListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitDelayOnBothSides(RequirementGrammarParser.DelayOnBothSidesContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link RequirementGrammarParser#delayOnRightSide}.
+	 * @param ctx the parse tree
+	 */
+	void enterDelayOnRightSide(RequirementGrammarParser.DelayOnRightSideContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RequirementGrammarParser#delayOnRightSide}.
+	 * @param ctx the parse tree
+	 */
+	void exitDelayOnRightSide(RequirementGrammarParser.DelayOnRightSideContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link RequirementGrammarParser#universality}.
 	 * @param ctx the parse tree

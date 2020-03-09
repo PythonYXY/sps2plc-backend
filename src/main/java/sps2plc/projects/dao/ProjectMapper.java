@@ -15,7 +15,7 @@ public interface ProjectMapper {
     @Select("select * from project where id = #{id}")
     Project findById(Long id);
 
-    @Insert("insert into project (description, name) values (#{description}, #{name})")
+    @Insert("insert into project (description, name, userId) values (#{description}, #{name}, #{userId})")
     @Options(useGeneratedKeys = true, keyProperty = "id")
     int save(Project project);
 

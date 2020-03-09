@@ -17,7 +17,7 @@ public class SPS2PLC implements ExpressionVisitor {
 
     public SPS2PLC() { }
 
-    public ILCode translate(List<Requirement> requirements, List<List<String>> priorityArray) {
+    public ILCode translate(List<Requirement> requirements, List<List<String>> priorityArray, Map<String, String> ioMap) {
         ilCode = new ILCode();
         List<Requirement> interlockRequirements = new ArrayList<>();
 
@@ -48,6 +48,7 @@ public class SPS2PLC implements ExpressionVisitor {
             ilCode.replaceExpressions(scopeExpressionILCodes, pattern);
         }
 
+
         ilCode.replaceIntermediates();
         ilCode.replaceTimers();
 
@@ -57,8 +58,7 @@ public class SPS2PLC implements ExpressionVisitor {
         }
         ilCode.replaceOutput();
         ilCode.handleInterlock(interlockRequirements);
-        ilCode.generateILCode();
-
+        ilCode.generateILCode(ioMap);
         return ilCode;
     }
 

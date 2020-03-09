@@ -13,6 +13,7 @@ public class SecurityConstants {
             "/*.js",
             "/fontawesome*",
             "/favicon.ico",
+            "/data-table*",
             "/"
     };
 }

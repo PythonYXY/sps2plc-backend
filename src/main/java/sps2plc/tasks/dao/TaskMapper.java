@@ -22,4 +22,8 @@ public interface TaskMapper {
             "values (#{projectId}, #{code}, #{description}, #{requirements}, #{status}, #{timestamp})")
     @ResultMap("taskMapper")
     int save(Task task);
+
+    @Update("update task set code = #{code}, description = #{description}, requirements = #{requirements}, status = #{status}, timestamp = #{timestamp} where project_id = #{projectId}")
+    @ResultMap("taskMapper")
+    int update(Task task);
 }

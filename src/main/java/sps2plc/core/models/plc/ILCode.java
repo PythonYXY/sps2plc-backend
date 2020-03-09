@@ -8,6 +8,7 @@ import sps2plc.core.models.translators.Pattern;
 import sps2plc.core.utils.Graph;
 
 import java.util.*;
+import java.util.regex.Matcher;
 import java.util.stream.Collectors;
 
 public class ILCode {
@@ -163,6 +164,13 @@ public class ILCode {
 
     private Graph generateDependencyGraph(List<Requirement> requirements) {
         Graph graph = new Graph();
+
+        // add nodes
+        for (int i = 0; i < requirements.size(); i++) {
+            graph.addNode(requirements.get(i).getReqId());
+        }
+
+        // add edges
         for (int i = 0; i < requirements.size(); i++) {
             for (int j = i + 1; j < requirements.size(); j++) {
 
@@ -377,7 +385,7 @@ public class ILCode {
         }
     }
 
-    public void generateILCode() {
+    public void generateILCode(Map<String, String> ioMap) {
         Graph graph = generateDependencyGraph(requirements);
         Map<String, ScopeCode> req2ScopeCode = getReq2ScopeCode();
         Map<String, Requirement> reqId2Requirement = getReqId2Requirement();
@@ -385,8 +393,22 @@ public class ILCode {
 
         generatedILCode.append("# This is the IL code for the PLC program.\n\n");
 
+        Map<String, String> reversedIOMap = new HashMap<>();
+        List<String> ioArr = new ArrayList<>();
+        for (Map.Entry<String, String> entry : ioMap.entrySet()) {
+            reversedIOMap.putIfAbsent(entry.getValue(), entry.getKey());
+            ioArr.add(entry.getValue());
+        }
+
+        System.out.println(reversedIOMap);
+        System.out.println(ioArr);
+
         for (String reqId: graph.getSortedResult()) {
-            generatedILCode.append("# " + reqId2Requirement.get(reqId).getText() + '\n');
+            String reqStr = reqId2Requirement.get(reqId).getText();
+
+            for (String io: ioArr) reqStr = reqStr.replace(io, io + "(" + reversedIOMap.get(io) + ")");
+
+            generatedILCode.append("# " + reqStr + '\n');
             String code = req2ScopeCode.get(reqId).getCodes().stream().map(entry ->
                     entry.getKey() + "\t" + entry.getValue()).collect(Collectors.joining("\n")
             );

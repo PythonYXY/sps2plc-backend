@@ -33,15 +33,10 @@ public class TaskService {
         this.ioTableService = ioTableService;
     }
 
-    private String preprocessRequirement(Long projId, List<Requirement> reqArray) {
-        List<IOMap> ioTable = this.ioTableService.getProjectIOTable(projId);
-        Map<String, String> ioMap = new HashMap<>();
-        for (IOMap io: ioTable) {
-            ioMap.put(io.getIOName(), io.getIONumber());
-        }
-
-        String pattern = "[\\u4E00-\\u9FA5]\\S+[\\u4E00-\\u9FA5]";
+    private String preprocessRequirement(List<Requirement> reqArray, Map<String, String> ioMap) {
+        String pattern = "[\\u4E00-\\u9FA5]\\S*[\\u4E00-\\u9FA5]";
         Pattern r = Pattern.compile(pattern);
+        System.out.println(ioMap);
 
         StringBuilder ret = new StringBuilder();
         reqArray.forEach(requirement -> {
@@ -61,13 +56,15 @@ public class TaskService {
 
     public Task getTask(Long projId) {
         this.reqArray = this.requirementService.getProjectRequirementsEnabled(projId);
+        Map<String, String> ioMap = getIOMap(projId);
         ILCode ilCode;
 
         try {
             SPSFrontEnd fe = new SPSFrontEnd();
-            fe.parseString(preprocessRequirement(projId, this.reqArray));
-            ilCode = fe.getILCode(null);
+            fe.parseString(preprocessRequirement(this.reqArray, ioMap));
+            ilCode = fe.getILCode(null, ioMap);
         } catch (Exception err) {
+            err.printStackTrace();
             return new Task(
                     projId,
                     "Error",
@@ -114,13 +111,15 @@ public class TaskService {
                 ilCode.getGeneratedILCode()
         );
 
-        taskMapper.save(task);
+        if (taskMapper.findByProjectId(task.getProjectId()) != null) taskMapper.update(task);
+        else taskMapper.save(task);
         return task;
     }
 
 
     public Task getTask(Task task) {
         this.reqArray = this.requirementService.getProjectRequirementsEnabled(task.getProjectId());
+        Map<String, String> ioMap = getIOMap(task.getProjectId());
 
         List<List<String>> priorityArray = new ArrayList<>();
         final StringBuilder priorities = new StringBuilder("Priorities:\n");
@@ -129,14 +128,16 @@ public class TaskService {
             priorityArray.add(Arrays.asList(priority.split("<")));
         });
         priorities.append("\n\n");
-        String requirements = preprocessRequirement(task.getProjectId(), reqArray);
+
+        String requirements = preprocessRequirement(reqArray, ioMap);
 
         ILCode ilCode;
         try {
             SPSFrontEnd fe = new SPSFrontEnd();
             fe.parseString(requirements);
-            ilCode = fe.getILCode(priorityArray);
+            ilCode = fe.getILCode(priorityArray, ioMap);
         } catch (Exception err) {
+            err.printStackTrace();
             return new Task(
                     task.getProjectId(),
                     "Error",
@@ -157,12 +158,23 @@ public class TaskService {
                 ilCode.getGeneratedILCode(),
                 priorities.toString() + requirements
         );
-        taskMapper.save(ret);
+
+        if (taskMapper.findByProjectId(ret.getProjectId()) != null) taskMapper.update(ret);
+        else taskMapper.save(ret);
         return ret;
     }
 
     public Task getFinishedTask(Long projId) {
         return taskMapper.findByProjectId(projId);
+    }
+
+    public Map<String, String> getIOMap(Long projId) {
+        List<IOMap> ioTable = this.ioTableService.getProjectIOTable(projId);
+        Map<String, String> ioMap = new HashMap<>();
+        for (IOMap io: ioTable) {
+            ioMap.put(io.getIOName(), io.getIONumber());
+        }
+        return ioMap;
     }
 
 }

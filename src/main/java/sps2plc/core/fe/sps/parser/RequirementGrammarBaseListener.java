@@ -1,4 +1,4 @@
-// Generated from /Users/yaoxinyan/Public/sps2plc/sps2plc-backend/src/antlr/RequirementGrammar.g4 by ANTLR 4.7.2
+// Generated from /Users/yaoxinyan/Public/sps2plc/sps2plc-backend-maven/src/antlr/RequirementGrammar.g4 by ANTLR 4.8
 
     package sps2plc.core.fe.sps.parser;
 
@@ -90,13 +90,25 @@ public class RequirementGrammarBaseListener implements RequirementGrammarListene
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDelayWithEnd(RequirementGrammarParser.DelayWithEndContext ctx) { }
+	@Override public void enterDelayWithEnd1(RequirementGrammarParser.DelayWithEnd1Context ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDelayWithEnd(RequirementGrammarParser.DelayWithEndContext ctx) { }
+	@Override public void exitDelayWithEnd1(RequirementGrammarParser.DelayWithEnd1Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterDelayWithEnd2(RequirementGrammarParser.DelayWithEnd2Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDelayWithEnd2(RequirementGrammarParser.DelayWithEnd2Context ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -121,6 +133,18 @@ public class RequirementGrammarBaseListener implements RequirementGrammarListene
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitDelayOnBothSides(RequirementGrammarParser.DelayOnBothSidesContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterDelayOnRightSide(RequirementGrammarParser.DelayOnRightSideContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDelayOnRightSide(RequirementGrammarParser.DelayOnRightSideContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

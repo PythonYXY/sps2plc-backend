@@ -10,6 +10,8 @@ import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.ParseTreeProperty;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class RequirementBuilder extends RequirementGrammarBaseListener {
@@ -68,38 +70,24 @@ public class RequirementBuilder extends RequirementGrammarBaseListener {
     }
 
 
-    @Override public void exitDelayWithEnd(RequirementGrammarParser.DelayWithEndContext ctx) {
-        List<Expression> exprs = getExpressionList(ctx.expr());
-        float delayL = ((NumberExpression)exprs.get(0)).getValue();
-        float delayR = ((NumberExpression)exprs.get(1)).getValue();
+    @Override public void exitDelayWithEnd1(RequirementGrammarParser.DelayWithEnd1Context ctx) {
+        delay = new Delay(Delay.Type.WITHEND_TYPE1, getExpressionList(ctx.expr()));
+    }
 
-        if (delayL == 0 && delayR != 0) {
-            delay = new Delay(Delay.Type.WITHEND_TYPE1, exprs);
-        } else if (delayL != 0 && delayR != 0) {
-            delay = new Delay(Delay.Type.WITHEND_TYPE2, exprs);
-        } else {
-            throw new RuntimeException("Delay with end with wrong parameters: delayL=" + delayL + " , delayR=" + delayR);
-        }
+    @Override public void exitDelayWithEnd2(RequirementGrammarParser.DelayWithEnd2Context ctx) {
+        delay = new Delay(Delay.Type.WITHEND_TYPE2, new ArrayList<>(Collections.singletonList(getExpression(ctx.expr()))));
     }
 
     @Override public void exitDelayWithoutEnd(RequirementGrammarParser.DelayWithoutEndContext ctx) {
-        delay = new Delay(Delay.Type.WITHOUTEND,  new ArrayList<Expression>(){{ add(getExpression(ctx.expr())); }});
+        delay = new Delay(Delay.Type.WITHOUTEND, new ArrayList<>(Collections.singletonList(getExpression(ctx.expr()))));
     }
 
     @Override public void exitDelayOnBothSides(RequirementGrammarParser.DelayOnBothSidesContext ctx) {
-        List<Expression> exprs = getExpressionList(ctx.expr());
-        float delayL = ((NumberExpression)exprs.get(0)).getValue();
-        float delayRE = ((NumberExpression)exprs.get(1)).getValue();
+        delay = new Delay(Delay.Type.ONBOTHSIDES, getExpressionList(ctx.expr()));
+    }
 
-        if (delayL == 0 && delayRE != 0) {
-            delay = new Delay(Delay.Type.ONBOTHSIDES_TYPE1, exprs);
-        } else if (delayL != 0 && delayRE != 0) {
-            delay = new Delay(Delay.Type.ONBOTHSIDES_TYPE2, exprs);
-        } else if (delayL != 0 && delayRE == 0){
-            delay = new Delay(Delay.Type.ONBOTHSIDES_TYPE3, exprs);
-        } else {
-            throw new RuntimeException("Delay on both sides with wrong parameters: delayL=" + delayL + " , delayRE=" + delayRE);
-        }
+    @Override public void exitDelayOnRightSide(RequirementGrammarParser.DelayOnRightSideContext ctx) {
+        delay = new Delay(Delay.Type.ONRIGHTSIDE, new ArrayList<>(Collections.singletonList(getExpression(ctx.expr()))));
     }
 
 

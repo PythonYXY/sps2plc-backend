@@ -6,20 +6,22 @@ grammar RequirementGrammar;
 
 list: requirement+;
 
-requirement: reqID? (scope ',') (delay ',')? property '.';
+requirement: reqID? scope ',' property delay? '.';
 reqID: '[' number ']';
 scope: 'Globally' | 'After' expr | 'After' expr 'until' expr | 'When' expr;
-delay: delayWithEnd | delayWithoutEnd | delayOnBothSides;
+delay: delayWithEnd1 | delayWithEnd2 | delayWithoutEnd | delayOnBothSides | delayOnRightSide;
 property: universality | absence | existence | interlock;
 
-delayWithEnd: 'delayL' '=' expr ',' 'delayR' '=' expr;
-delayWithoutEnd: 'delayL' '=' expr;
-delayOnBothSides: 'delayL' '=' expr ',' 'delayRE' '=' expr;
+delayWithEnd1: 'between' expr 'timeUnits' 'and' expr 'timeUnits';
+delayWithEnd2: 'within' expr 'timeUnits';
+delayWithoutEnd: 'after' expr 'timeUnits';
+delayOnBothSides: 'after' expr 'timeUnits' 'and' 'the' 'property' 'still' 'holds' 'for' expr 'timeUnits' 'after' 'the' 'end' 'of' 'the' 'scope';
+delayOnRightSide: 'and' 'the' 'property' 'still' 'holds' 'for' expr 'timeUnits' 'after' 'the' 'end' 'of' 'the' 'scope';
 
-universality: ID 'is' 'true';
-absence: ID 'is' 'false';
-existence: ID 'exists';
-interlock: '(' ID 'and' ID ')' 'is' 'false';
+universality: 'it' 'is' 'always' 'the' 'case' 'that' ID 'holds';
+absence: 'it' 'is' 'never' 'the' 'case' 'that' ID 'holds';
+existence: ID 'exists' 'immediately';
+interlock: 'it' 'is' 'never' 'the' 'case' 'that' '(' ID 'and' ID ')' 'hold';
 
 expr
     : '(' expr ')'                                  #BracketExpression

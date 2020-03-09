@@ -2,13 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fc2a49d-a215-406b-9442-46bbd66d661e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/antlr/RequirementGrammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/antlr/RequirementGrammar.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/Sps2plcApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/Sps2plcApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/SPSFrontEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/SPSFrontEnd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammar.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammar.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarBaseListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/sps/parser/RequirementGrammarParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/plc/ILCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/plc/ILCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Delay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/sps/Delay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/translators/SPS2PLC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/translators/SPS2PLC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/utils/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/utils/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/projects/dao/ProjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/projects/dao/ProjectMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/security/SecurityConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/security/SecurityConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/tasks/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/tasks/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/tasks/dao/TaskMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/tasks/dao/TaskMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pattern_to_plc.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pattern_to_plc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/resources/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/resources/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/resources/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/resources/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sps2plc/core/fe/SPSFrontEndTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sps2plc/core/fe/SPSFrontEndTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -42,35 +74,7 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="sps2plc: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="iomap: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sps2plc: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="project: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sps2plc: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="requirement: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sps2plc: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="task: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sps2plc: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -101,9 +105,18 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/js" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/target/classes/sps2plc" />
+      <recent name="$PROJECT_DIR$/target" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="sps2plc.ioTable" />
     </key>
@@ -111,12 +124,6 @@
       <recent name="$PROJECT_DIR$/src/test/java/sps2plc/tasks" />
       <recent name="$PROJECT_DIR$/src/test/java/sps2plc/requirements/dao" />
       <recent name="$PROJECT_DIR$/src/test/java/sps2plc/project/dao" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/static/js" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static" />
-      <recent name="$PROJECT_DIR$/target/classes/sps2plc" />
-      <recent name="$PROJECT_DIR$/target" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -136,7 +143,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Sps2plcApplication">
+  <component name="RunManager" selected="Maven.sps2plc-backend [package]">
     <configuration name="Temp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sps2plc.Temp" />
       <module name="sps2plc-backend-maven" />
@@ -227,6 +234,8 @@
       <module name="sps2plc-backend-maven" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="sps2plc.Sps2plcApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -257,12 +266,16 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@fb93deb3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@7a81ce13" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@fb93deb3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@37096c10" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@be759247" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@be759247" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@2feac1ed" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -298,6 +311,11 @@
       <workItem from="1583660234376" duration="4396000" />
       <workItem from="1583670152744" duration="2938000" />
       <workItem from="1583681606363" duration="103000" />
+      <workItem from="1583726672684" duration="465000" />
+      <workItem from="1583730274840" duration="219000" />
+      <workItem from="1583731409346" duration="3358000" />
+      <workItem from="1583736799024" duration="10426000" />
+      <workItem from="1583751171039" duration="5407000" />
     </task>
     <servers />
   </component>
@@ -309,7 +327,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

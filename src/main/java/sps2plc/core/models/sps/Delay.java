@@ -8,12 +8,11 @@ import java.util.stream.Collectors;
 public class Delay {
 
     public enum Type {
-        WITHEND_TYPE1, // delayL = 0, delayR != 0
-        WITHEND_TYPE2, // delayL != 0, delayR != 0
+        WITHEND_TYPE2, // delayL = 0, delayR != 0
+        WITHEND_TYPE1, // delayL != 0, delayR != 0
         WITHOUTEND,
-        ONBOTHSIDES_TYPE1, // delayL = 0, delayRE != 0
-        ONBOTHSIDES_TYPE2, // delayL != 0, delayRE != 0
-        ONBOTHSIDES_TYPE3, // delayL != 0, delayRE = 0
+        ONRIGHTSIDE, // delayL = 0, delayRE != 0
+        ONBOTHSIDES, // delayL != 0, delayRE != 0
     }
 
     public final Type type;
