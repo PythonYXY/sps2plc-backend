@@ -20,7 +20,7 @@ The architecture of SPS2PLC is outlined above. SPS2PLC can be accessed by multip
 
 - The Front-end: The front-end is a web application implemented in Typescript, using the Angular framework, which provides a graphical user interface for the user and performs asynchronous calls to the back-end.
 - The Back-end is a Java server application based on the Springboot framework and MySQL database engine. It provides a set of endpoints REST APIs with JSON format for data exchange. In order to access services and user's own data, SPS2PLC employ the JWT open standard for authentication over HTTP.
-- Requirement Checker contains algorithms to check consistency and to find a minimal unsatisfiable core of requirements, employing on Z3 Prover.
+- Requirement Checker contains algorithms to check consistency and to find a minimal unsatisfiable core of requirements, employing on Z3 Prover (The requiremtns checker is still under development).
 - Code Generator contains a parser for SPS language and to generate IL code for PLC program.
 - a database to store requirements, user data and other information suck as tasks execution logs.
 
@@ -112,4 +112,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## References
 
 [1] Dwyer, M.B., Avrunin, G.S., Corbett, J.C.: Patterns in property specifications for finite-state verification. In: Software Engineering, 1999. Proceedings of the 1999 International Conference on, pp. 411–420. IEEE (1999)
+
 [2] http://ps-patterns.wikidot.com/
