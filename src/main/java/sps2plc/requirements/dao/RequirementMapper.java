@@ -13,6 +13,7 @@ public interface RequirementMapper {
     @Results(id = "requirementMapper", value = {
             @Result(id = true, column = "id", property = "id"),
             @Result(column = "disabled", property = "disabled"),
+            @Result(column = "description", property = "description"),
             @Result(column = "error_description", property = "errorDescription"),
             @Result(column = "project", property = "project"),
             @Result(column = "state", property = "state"),
@@ -28,12 +29,12 @@ public interface RequirementMapper {
     @ResultMap("requirementMapper")
     List<Requirement> findByProjectAndDisabledOrderById(Long project, boolean disabled);
 
-    @Insert("insert into requirement (disabled, error_description, project, state, text) " +
-            "values (#{disabled}, #{errorDescription}, #{project}, #{state}, #{text})")
+    @Insert("insert into requirement (disabled, description, error_description, project, state, text) " +
+            "values (#{disabled}, #{description}, #{errorDescription}, #{project}, #{state}, #{text})")
     @Options(useGeneratedKeys = true, keyProperty = "id")
     int save(Requirement requirement);
 
-    @Update("update requirement set disabled = #{disabled}, error_description = #{errorDescription}, project = #{project}, " +
+    @Update("update requirement set disabled = #{disabled}, description = #{description}, error_description = #{errorDescription}, project = #{project}, " +
             "state = #{state}, text = #{text} where id = #{id}")
     int updateRequirement(Requirement requirement);
 

@@ -17,6 +17,7 @@ public class Requirement {
     private Long id;
     private String text;
     private Long project;
+    private String description;
     private String errorDescription;
     private ReqState state;
     private Boolean disabled;
@@ -25,9 +26,10 @@ public class Requirement {
 
     }
 
-    public Requirement(String text, Long project, String errorDescription, ReqState state, Boolean disabled) {
+    public Requirement(String text, Long project, String description, String errorDescription, ReqState state, Boolean disabled) {
         this.text = text;
         this.project = project;
+        this.description = description;
         this.errorDescription = errorDescription;
         this.state = state;
         this.disabled = disabled;

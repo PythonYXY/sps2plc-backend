@@ -1,0 +1,164 @@
+-- MySQL dump 10.13  Distrib 8.0.19, for macos10.15 (x86_64)
+--
+-- Host: localhost    Database: sps2plc
+-- ------------------------------------------------------
+-- Server version	8.0.19
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `iomap`
+--
+
+DROP TABLE IF EXISTS `iomap`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `iomap` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `io_name` varchar(255) DEFAULT NULL,
+  `io_number` varchar(255) DEFAULT NULL,
+  `project_id` int NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=53 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `iomap`
+--
+
+LOCK TABLES `iomap` WRITE;
+/*!40000 ALTER TABLE `iomap` DISABLE KEYS */;
+INSERT INTO `iomap` VALUES (1,'启动按钮按下','I0.0',1),(2,'停止按钮按下','I0.1',1),(3,'过载保护启动','I0.2',1),(4,'电动机启动','Q0.0',1),(5,'制动开关打开','Q0.1',1),(6,'报警启动','I0.0',2),(7,'响应按钮按下','I0.1',2),(8,'报警灯亮','Q0.0',2),(9,'测试按钮按下','I0.2',2),(10,'蜂鸣器报警','Q0.1',2),(11,'热继电器闭合','I0.0',3),(12,'总启动按钮按下','I0.1',3),(13,'砂轮电动机M1启动按钮按下','I0.2',3),(14,'砂轮电动机M1停止按钮按下','I0.3',3),(15,'电动机M3退出点动按钮按下','I0.4',3),(16,'电动机M3进入点动按钮按下','I0.5',3),(17,'电动机M4（正转）上升点动按钮按下','I0.6',3),(18,'电动机M4（反转）下降点动按钮按下','I0.7',3),(19,'自动进给停止按钮按下','I1.0',3),(20,'总停止按钮按下','I1.1',3),(21,'电动机M2高速转换开关打开','I1.2',3),(22,'电动机M2低速转换开关打开','I1.3',3),(23,'自动进给启动按钮按下','I1.4',3),(24,'电磁吸盘充磁可调控制','I1.5',3),(25,'电磁吸盘充磁不可调控制','I1.6',3),(26,'冷却泵电动机控制','I1.7',3),(27,'砂轮升降电动机手动控制','I2.0',3),(28,'自动进给控制','I2.1',3),(29,'工作台退出限位行程开关打开','I2.2',3),(30,'工作台进入限位行程开关打开','I2.3',3),(31,'砂轮升降上限位行程开关打开','I2.4',3),(32,'电动指示灯亮','Q0.0',3),(33,'砂轮指示灯亮','Q0.1',3),(34,'电压继电器闭合','Q0.2',3),(35,'自动进给限位行程开关打开','I2.5',3),(36,'电磁吸盘欠电流控制','I2.6',3),(37,'砂轮电动机M1接触器KM1闭合','Q0.3',3),(38,'砂轮电动机M1接触器KM2闭合','Q0.4',3),(39,'砂轮电动机M1接触器KM3闭合','Q0.5',3),(40,'工作台转动电动机低速接触器闭合','Q0.6',3),(41,'工作台转动电动机高速接触器闭合','Q0.7',3),(42,'工作台移动电动机正转接触器闭合','Q1.0',3),(43,'工作台移动电动机反转接触器闭合','Q1.1',3),(44,'砂轮升降电动机上升接触器闭合','Q1.2',3),(45,'砂轮升降电动机下降接触器闭合','Q1.3',3),(46,'冷却泵电动机接触器闭合','Q1.4',3),(47,'自动进给电动机接触器闭合','Q1.5',3),(48,'电磁吸盘控制接触器闭合','Q1.6',3),(49,'自动进给控制电磁铁','Q1.7',3),(50,'中间继电器K1闭合','Q2.0',3),(51,'中间继电器K2闭合','Q2.1',3),(52,'中间继电器K3闭合','Q2.2',3);
+/*!40000 ALTER TABLE `iomap` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `project`
+--
+
+DROP TABLE IF EXISTS `project`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `project` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `description` text,
+  `name` varchar(255) NOT NULL,
+  `userId` int NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `project_user_id_fk` (`userId`),
+  CONSTRAINT `project_user_id_fk` FOREIGN KEY (`userId`) REFERENCES `user` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `project`
+--
+
+LOCK TABLES `project` WRITE;
+/*!40000 ALTER TABLE `project` DISABLE KEYS */;
+INSERT INTO `project` VALUES (1,'','电动机单相全波整流能耗制动控制',1),(2,'','故障报警控制系统',1),(3,'','M7475型立轴圆台平面磨床控制',1),(4,'','test',2);
+/*!40000 ALTER TABLE `project` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `requirement`
+--
+
+DROP TABLE IF EXISTS `requirement`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `requirement` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `disabled` tinyint(1) NOT NULL,
+  `error_description` text,
+  `project` int NOT NULL,
+  `state` varchar(255) NOT NULL,
+  `text` text NOT NULL,
+  `description` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `requirement`
+--
+
+LOCK TABLES `requirement` WRITE;
+/*!40000 ALTER TABLE `requirement` DISABLE KEYS */;
+INSERT INTO `requirement` VALUES (1,0,'',1,'COMPLIANT','After 启动按钮按下 until (停止按钮按下 or 过载保护启动), it is always the case that 电动机启动 holds.','123'),(2,0,'',1,'COMPLIANT','After 停止按钮按下, it is always the case that 制动开关打开 holds within 30 timeUnits.',NULL),(3,0,'',1,'COMPLIANT','Globally, it is never the case that (电动机启动 and 制动开关打开) hold.',NULL),(4,0,'',2,'COMPLIANT','When (报警启动 and not M0.0), it is always the case that M0.1 holds after 5 timeUnits.',NULL),(5,0,'',2,'COMPLIANT','When (报警启动 and not M0.0), it is always the case that M0.0 holds after 10 timeUnits.',NULL),(6,0,'',2,'COMPLIANT','When M0.1, it is always the case that 报警灯亮 holds.',NULL),(7,0,'',2,'COMPLIANT','After 响应按钮按下 until not 报警启动, it is always the case that 报警灯亮 holds.',NULL),(8,0,'',2,'COMPLIANT','When 测试按钮按下, it is always the case that 报警灯亮 holds.',NULL),(9,0,'',2,'COMPLIANT','When 报警启动, it is always the case that 蜂鸣器报警 holds.',NULL),(10,0,'',2,'COMPLIANT','After 响应按钮按下 until not 报警启动, it is never the case that 蜂鸣器报警 holds.',NULL),(11,0,'',3,'COMPLIANT','After 总启动按钮按下 until (总停止按钮按下 or not 热继电器闭合), it is always the case that 电压继电器闭合 holds.',NULL),(12,0,'',3,'COMPLIANT','After 砂轮电动机M1启动按钮按下 until (砂轮电动机M1停止按钮按下 or not 电压继电器闭合), it is always the case that 砂轮电动机M1接触器KM1闭合 holds.',NULL),(13,0,'',3,'COMPLIANT','After 砂轮电动机M1启动按钮按下 until (砂轮电动机M1停止按钮按下 or not 电压继电器闭合), it is always the case that 砂轮电动机M1接触器KM3闭合 holds within 30 timeUnits.',NULL),(14,0,'',3,'COMPLIANT','After 砂轮电动机M1启动按钮按下 until (砂轮电动机M1停止按钮按下 or not 电压继电器闭合), it is always the case that 砂轮电动机M1接触器KM2闭合 holds after 30 timeUnits.',NULL),(15,0,'',3,'COMPLIANT','Globally, it is never the case that (砂轮电动机M1接触器KM2闭合 and 砂轮电动机M1接触器KM3闭合) hold.',NULL),(16,0,'',3,'COMPLIANT','When (电动机M2高速转换开关打开 and (not 砂轮升降电动机下降接触器闭合 and (not 中间继电器K2闭合 and 电压继电器闭合))), it is always the case that 工作台转动电动机高速接触器闭合 holds.',NULL),(17,0,'',3,'COMPLIANT','When (电动机M2低速转换开关打开 and (not 砂轮升降电动机下降接触器闭合 and (not 中间继电器K2闭合 and 电压继电器闭合))), it is always the case that 工作台转动电动机低速接触器闭合 holds.',NULL),(18,0,'',3,'COMPLIANT','Globally, it is never the case that (工作台转动电动机高速接触器闭合 and 工作台转动电动机低速接触器闭合) hold.',NULL),(19,0,'',3,'COMPLIANT','When (电动机M3退出点动按钮按下 and (not 工作台退出限位行程开关打开 and 电压继电器闭合)), it is always the case that 工作台移动电动机正转接触器闭合 holds.',NULL),(20,0,'',3,'COMPLIANT','When (电动机M3进入点动按钮按下 and (not 工作台进入限位行程开关打开 and 电压继电器闭合)), it is always the case that 工作台移动电动机反转接触器闭合 holds.',NULL),(21,0,'',3,'COMPLIANT','Globally, it is never the case that (工作台移动电动机正转接触器闭合 and 工作台移动电动机反转接触器闭合) hold.',NULL),(22,0,'',3,'COMPLIANT','When ((not 中间继电器K2闭合 or 砂轮升降电动机手动控制) and ((中间继电器K2闭合 or 中间继电器K1闭合) and (not 电动机M4（正转）上升点动按钮按下 and (not 砂轮升降上限位行程开关打开 and (not 冷却泵电动机接触器闭合 and (not M0.4 and 电压继电器闭合)))))), it is always the case that 砂轮升降电动机上升接触器闭合 holds.',NULL),(23,0,'',3,'COMPLIANT','When (电动机M4（反转）下降点动按钮按下 and (not 自动进给电动机接触器闭合 and (not 砂轮升降电动机上升接触器闭合 and (not 工作台转动电动机低速接触器闭合 and (not 工作台转动电动机高速接触器闭合 and 电压继电器闭合))))), it is always the case that 砂轮升降电动机上升接触器闭合 holds.',NULL),(24,0,'',3,'COMPLIANT','When (冷却泵电动机控制 and 电压继电器闭合), it is always the case that 冷却泵电动机接触器闭合 holds.',NULL),(25,0,'',3,'COMPLIANT','After (总启动按钮按下 and 自动进给启动按钮按下) until (中间继电器K2闭合 or (自动进给限位行程开关打开 or 自动进给停止按钮按下)), it is always the case that 自动进给电动机接触器闭合 holds and the property still holds for 10 timeUnits after the end of the scope.',NULL),(26,0,'',3,'COMPLIANT','After (总启动按钮按下 and 自动进给启动按钮按下) until (中间继电器K2闭合 or (自动进给限位行程开关打开 or 自动进给停止按钮按下)), it is always the case that 自动进给控制电磁铁 holds and the property still holds for 10 timeUnits after the end of the scope.\n',NULL),(27,1,'',3,'COMPLIANT','When (not 电压继电器闭合 or 砂轮升降电动机上升接触器闭合), it is never the case that 自动进给电动机接触器闭合 holds.',NULL),(28,0,'',3,'COMPLIANT','When (not 电压继电器闭合 or 砂轮升降电动机上升接触器闭合), it is never the case that 自动进给控制电磁铁 holds.',NULL),(29,0,'',3,'COMPLIANT','When not 电磁吸盘欠电流控制,  it is always the case that 中间继电器K2闭合 holds.',NULL),(30,0,'',3,'COMPLIANT','When 电磁吸盘充磁可调控制, it is always the case that 电磁吸盘控制接触器闭合 holds.',NULL),(31,0,'',3,'COMPLIANT','When 电磁吸盘控制接触器闭合, it is always the case that 中间继电器K1闭合 holds.',NULL),(32,0,'',3,'COMPLIANT','When not 电磁吸盘控制接触器闭合, it is always the case that 中间继电器K3闭合 holds.',NULL),(33,0,'',3,'COMPLIANT','When not 电磁吸盘控制接触器闭合, it is always the case that 中间继电器K3闭合 holds.',NULL),(35,0,'',4,'COMPLIANT','Globally, it is always the case that P holds.','description');
+/*!40000 ALTER TABLE `requirement` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `task`
+--
+
+DROP TABLE IF EXISTS `task`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `task` (
+  `project_id` int NOT NULL,
+  `code` text,
+  `description` varchar(255) DEFAULT NULL,
+  `requirements` text,
+  `status` varchar(255) DEFAULT NULL,
+  `timestamp` timestamp NOT NULL,
+  PRIMARY KEY (`project_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `task`
+--
+
+LOCK TABLES `task` WRITE;
+/*!40000 ALTER TABLE `task` DISABLE KEYS */;
+INSERT INTO `task` VALUES (1,'# This is the IL code for the PLC program.\n\n# [1]After I0.0(启动按钮按下) until (I0.1(停止按钮按下) or I0.2(过载保护启动)), it is always the case that Q0.0(电动机启动) holds.\nLD	I0.0\nO	M8.0\nLDN	I0.1\nAN	I0.2\nALD	\n=	M8.0\n\n# [2]After I0.1(停止按钮按下), it is always the case that Q0.1(制动开关打开) holds within 30 timeUnits.\nLD	I0.1\nO	M5.0\nAN	T37\n=	M5.0\nLD	M5.0\nTON	T37,30\nLD	M5.0\n=	M8.1\n\n# Interlock code (Q0.0(电动机启动) and Q0.1(制动开关打开))\nLDN	M8.1\nO	Q0.0\nA	M8.0\n=	Q0.0\nLDN	M8.0\nO	Q0.1\nA	M8.1\n=	Q0.1\n\n','Generated IL Code',NULL,'GENERATE','2020-03-08 23:17:38'),(2,'# This is the IL code for the PLC program.\n\n# [5]When (I0.0(报警启动) and not M0.0), it is always the case that M0.0 holds after 10 timeUnits.\nLD	I0.0\nAN	M0.0\nTON	T38,10\nLD	T38\n=	M0.0\n\n# [7]After I0.1(响应按钮按下) until not I0.0(报警启动), it is always the case that Q0.0(报警灯亮) holds.\nLD	I0.1\nO	M7.1\nLD	I0.0\nALD	\n=	M7.1\n\n# [8]When I0.2(测试按钮按下), it is always the case that Q0.0(报警灯亮) holds.\nLD	I0.2\n=	M7.2\n\n# [9]When I0.0(报警启动), it is always the case that Q0.1(蜂鸣器报警) holds.\nLD	I0.0\n=	M7.3\n\n# [10]After I0.1(响应按钮按下) until not I0.0(报警启动), it is never the case that Q0.1(蜂鸣器报警) holds.\nLD	I0.1\nO	M6.0\nLD	I0.0\nALD	\n=	M6.0\nLDN	M6.0\n=	M7.4\n\n# Priority combination code: (9<10)\nLD	M7.3\nAN	M7.4\n=	Q0.1\n\n# [4]When (I0.0(报警启动) and not M0.0), it is always the case that M0.1 holds after 5 timeUnits.\nLD	I0.0\nAN	M0.0\nTON	T37,5\nLD	T37\n=	M0.1\n\n# [6]When M0.1, it is always the case that Q0.0(报警灯亮) holds.\nLD	M0.1\n=	M7.0\n\n# Priority combination code: (6<7<8)\nLD	M7.0\nO	M7.1\nO	M7.2\n=	Q0.0\n\n','Generated IL Code','Priorities:\n6<7<8\n9<10\n\n\n[4]When (I0.0 and not M0.0), it is always the case that M0.1 holds after 5 timeUnits.\n[5]When (I0.0 and not M0.0), it is always the case that M0.0 holds after 10 timeUnits.\n[6]When M0.1, it is always the case that Q0.0 holds.\n[7]After I0.1 until not I0.0, it is always the case that Q0.0 holds.\n[8]When I0.2, it is always the case that Q0.0 holds.\n[9]When I0.0, it is always the case that Q0.1 holds.\n[10]After I0.1 until not I0.0, it is never the case that Q0.1 holds.\n','GENERATE','2020-03-08 23:21:53'),(3,'# This is the IL code for the PLC program.\n\n# [11]After I0.1(总启动按钮按下) until (I1.1(总停止按钮按下) or not I0.0(热继电器闭合)), it is always the case that Q0.2(电压继电器闭合) holds.\nLD	I0.1\nO	Q0.2\nLDN	I1.1\nA	I0.0\nALD	\n=	Q0.2\n\n# [12]After I0.2(砂轮电动机M1启动按钮按下) until (I0.3(砂轮电动机M1停止按钮按下) or not Q0.2(电压继电器闭合)), it is always the case that Q0.3(砂轮电动机M1接触器KM1闭合) holds.\nLD	I0.2\nO	Q0.3\nLDN	I0.3\nA	Q0.2\nALD	\n=	Q0.3\n\n# [13]After I0.2(砂轮电动机M1启动按钮按下) until (I0.3(砂轮电动机M1停止按钮按下) or not Q0.2(电压继电器闭合)), it is always the case that Q0.5(砂轮电动机M1接触器KM3闭合) holds within 30 timeUnits.\nLD	I0.2\nO	M5.0\nLDN	I0.3\nA	Q0.2\nALD	\nAN	T37\n=	M5.0\nLD	M5.0\nTON	T37,30\nLD	M5.0\n=	M8.1\n\n# [14]After I0.2(砂轮电动机M1启动按钮按下) until (I0.3(砂轮电动机M1停止按钮按下) or not Q0.2(电压继电器闭合)), it is always the case that Q0.4(砂轮电动机M1接触器KM2闭合) holds after 30 timeUnits.\nLD	I0.2\nO	M5.1\nLDN	I0.3\nA	Q0.2\nALD	\n=	M5.1\nLD	M5.1\nTON	T38,30\nLD	T38\n=	M8.0\n\n# [19]When (I0.4(电动机M3退出点动按钮按下) and (not I2.2(工作台退出限位行程开关打开) and Q0.2(电压继电器闭合))), it is always the case that Q1.0(工作台移动电动机正转接触器闭合) holds.\nLD	I0.4\nAN	I2.2\nA	Q0.2\n=	M8.4\n\n# [20]When (I0.5(电动机M3进入点动按钮按下) and (not I2.3(工作台进入限位行程开关打开) and Q0.2(电压继电器闭合))), it is always the case that Q1.1(工作台移动电动机反转接触器闭合) holds.\nLD	I0.5\nAN	I2.3\nA	Q0.2\n=	M8.5\n\n# [24]When (I1.7(冷却泵电动机控制) and Q0.2(电压继电器闭合)), it is always the case that Q1.4(冷却泵电动机接触器闭合) holds.\nLD	I1.7\nA	Q0.2\n=	Q1.4\n\n# [29]When not I2.6(电磁吸盘欠电流控制),  it is always the case that Q2.1(中间继电器K2闭合) holds.\nLDN	I2.6\n=	Q2.1\n\n# [30]When I1.5(电磁吸盘充磁可调控制), it is always the case that Q1.6(电磁吸盘控制接触器闭合) holds.\nLD	I1.5\n=	Q1.6\n\n# [31]When Q1.6(电磁吸盘控制接触器闭合), it is always the case that Q2.0(中间继电器K1闭合) holds.\nLD	Q1.6\n=	Q2.0\n\n# [32]When not Q1.6(电磁吸盘控制接触器闭合), it is always the case that Q2.2(中间继电器K3闭合) holds.\nLDN	Q1.6\n=	M7.0\n\n# [33]When not Q1.6(电磁吸盘控制接触器闭合), it is always the case that Q2.2(中间继电器K3闭合) holds.\nLDN	Q1.6\n=	M7.1\n\n# Priority combination code: (32<33)\nLD	M7.0\nO	M7.1\n=	Q2.2\n\n# Interlock code (Q0.4(砂轮电动机M1接触器KM2闭合) and Q0.5(砂轮电动机M1接触器KM3闭合))\nLDN	M8.1\nO	Q0.4\nA	M8.0\n=	Q0.4\nLDN	M8.0\nO	Q0.5\nA	M8.1\n=	Q0.5\n\n# Interlock code (Q1.0(工作台移动电动机正转接触器闭合) and Q1.1(工作台移动电动机反转接触器闭合))\nLDN	M8.5\nO	Q1.0\nA	M8.4\n=	Q1.0\nLDN	M8.4\nO	Q1.1\nA	M8.5\n=	Q1.1\n\n# [16]When (I1.2(电动机M2高速转换开关打开) and (not Q1.3(砂轮升降电动机下降接触器闭合) and (not Q2.1(中间继电器K2闭合) and Q0.2(电压继电器闭合)))), it is always the case that Q0.7(工作台转动电动机高速接触器闭合) holds.\nLD	I1.2\nAN	Q1.3\nAN	Q2.1\nA	Q0.2\n=	M8.2\n\n# [17]When (I1.3(电动机M2低速转换开关打开) and (not Q1.3(砂轮升降电动机下降接触器闭合) and (not Q2.1(中间继电器K2闭合) and Q0.2(电压继电器闭合)))), it is always the case that Q0.6(工作台转动电动机低速接触器闭合) holds.\nLD	I1.3\nAN	Q1.3\nAN	Q2.1\nA	Q0.2\n=	M8.3\n\n# [22]When ((not Q2.1(中间继电器K2闭合) or I2.0(砂轮升降电动机手动控制)) and ((Q2.1(中间继电器K2闭合) or Q2.0(中间继电器K1闭合)) and (not I0.6(电动机M4（正转）上升点动按钮按下) and (not I2.4(砂轮升降上限位行程开关打开) and (not Q1.4(冷却泵电动机接触器闭合) and (not M0.4 and Q0.2(电压继电器闭合))))))), it is always the case that Q1.2(砂轮升降电动机上升接触器闭合) holds.\nLDN	Q2.1\nO	I2.0\nLD	Q2.1\nO	Q2.0\nAN	I0.6\nAN	I2.4\nAN	Q1.4\nAN	M0.4\nA	Q0.2\nALD	\n=	M7.2\n\n# [25]After (I0.1(总启动按钮按下) and I1.4(自动进给启动按钮按下)) until (Q2.1(中间继电器K2闭合) or (I2.5(自动进给限位行程开关打开) or I1.0(自动进给停止按钮按下))), it is always the case that Q1.5(自动进给电动机接触器闭合) holds and the property still holds for 10 timeUnits after the end of the scope.\nLD	I0.1\nA	I1.4\nO	Q1.5\nAN	T39\n=	Q1.5\nLD	Q2.1\nO	I2.5\nO	I1.0\nO	M5.2\nA	Q1.5\n=	M5.2\nLD	M5.2\nTON	T39,10\n\n# [26]After (I0.1(总启动按钮按下) and I1.4(自动进给启动按钮按下)) until (Q2.1(中间继电器K2闭合) or (I2.5(自动进给限位行程开关打开) or I1.0(自动进给停止按钮按下))), it is always the case that Q1.7(自动进给控制电磁铁) holds and the property still holds for 10 timeUnits after the end of the scope.\nLD	I0.1\nA	I1.4\nO	M7.4\nAN	T40\n=	M7.4\nLD	Q2.1\nO	I2.5\nO	I1.0\nO	M5.3\nA	M7.4\n=	M5.3\nLD	M5.3\nTON	T40,10\n\n# Interlock code (Q0.7(工作台转动电动机高速接触器闭合) and Q0.6(工作台转动电动机低速接触器闭合))\nLDN	M8.3\nO	Q0.7\nA	M8.2\n=	Q0.7\nLDN	M8.2\nO	Q0.6\nA	M8.3\n=	Q0.6\n\n','Generated IL Code','Priorities:\n32<33\n22<23\n26<28\n\n\n[11]After I0.1 until (I1.1 or not I0.0), it is always the case that Q0.2 holds.\n[12]After I0.2 until (I0.3 or not Q0.2), it is always the case that Q0.3 holds.\n[13]After I0.2 until (I0.3 or not Q0.2), it is always the case that Q0.5 holds within 30 timeUnits.\n[14]After I0.2 until (I0.3 or not Q0.2), it is always the case that Q0.4 holds after 30 timeUnits.\n[15]Globally, it is never the case that (Q0.4 and Q0.5) hold.\n[16]When (I1.2 and (not Q1.3 and (not Q2.1 and Q0.2))), it is always the case that Q0.7 holds.\n[17]When (I1.3 and (not Q1.3 and (not Q2.1 and Q0.2))), it is always the case that Q0.6 holds.\n[18]Globally, it is never the case that (Q0.7 and Q0.6) hold.\n[19]When (I0.4 and (not I2.2 and Q0.2)), it is always the case that Q1.0 holds.\n[20]When (I0.5 and (not I2.3 and Q0.2)), it is always the case that Q1.1 holds.\n[21]Globally, it is never the case that (Q1.0 and Q1.1) hold.\n[22]When ((not Q2.1 or I2.0) and ((Q2.1 or Q2.0) and (not I0.6 and (not I2.4 and (not Q1.4 and (not M0.4 and Q0.2)))))), it is always the case that Q1.2 holds.\n[23]When (I0.7 and (not Q1.5 and (not Q1.2 and (not Q0.6 and (not Q0.7 and Q0.2))))), it is always the case that Q1.2 holds.\n[24]When (I1.7 and Q0.2), it is always the case that Q1.4 holds.\n[25]After (I0.1 and I1.4) until (Q2.1 or (I2.5 or I1.0)), it is always the case that Q1.5 holds and the property still holds for 10 timeUnits after the end of the scope.\n[26]After (I0.1 and I1.4) until (Q2.1 or (I2.5 or I1.0)), it is always the case that Q1.7 holds and the property still holds for 10 timeUnits after the end of the scope.\n\n[28]When (not Q0.2 or Q1.2), it is never the case that Q1.7 holds.\n[29]When not I2.6,  it is always the case that Q2.1 holds.\n[30]When I1.5, it is always the case that Q1.6 holds.\n[31]When Q1.6, it is always the case that Q2.0 holds.\n[32]When not Q1.6, it is always the case that Q2.2 holds.\n[33]When not Q1.6, it is always the case that Q2.2 holds.\n','GENERATE','2020-03-08 23:23:52');
+/*!40000 ALTER TABLE `task` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `user`
+--
+
+DROP TABLE IF EXISTS `user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `user` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_username_uindex` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user`
+--
+
+LOCK TABLES `user` WRITE;
+/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES (1,'test','$2a$10$aoadnK3utu0BItM23at6Tum/9qaAD.v6/znBFyXOsQQWUb1NPEw5.');
+/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2020-03-10 14:43:18

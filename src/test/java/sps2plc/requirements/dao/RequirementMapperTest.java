@@ -37,6 +37,7 @@ public class RequirementMapperTest {
     public void testSave() {
         Requirement requirement = new Requirement("text",
                 1L,
+                "",
                 "errorDescription",
                 Requirement.ReqState.COMPLIANT,
                 false);
@@ -48,6 +49,7 @@ public class RequirementMapperTest {
     public void testUpdateRequirement() {
         Requirement requirement = new Requirement("text",
                 1L,
+                "",
                 "errorDescription",
                 Requirement.ReqState.COMPLIANT,
                 false);
