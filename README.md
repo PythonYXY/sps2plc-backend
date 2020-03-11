@@ -2,7 +2,7 @@
 
 [![Latest Version](https://img.shields.io/badge/build-passing-green)]()
 [![The MIT License](http://img.shields.io/badge/license-MIT-blue.svg)]()
-   
+
 SPS2PLC (Specification Pattern System to Programmable Logic Controller) is a tool that helpes developing requirements and generating PLC code from formalized specification .
 
 The specification of requirements is a critical activity in software and system development. A defect in a requirement specification can result in a situation where a software or system is delivered that fullfills the given requirements, but does not satisfy the customer's needs due to erroneous requirments.
@@ -22,7 +22,7 @@ The architecture of SPS2PLC is outlined above. SPS2PLC can be accessed by multip
 - The Back-end is a Java server application based on the Springboot framework and MySQL database engine. It provides a set of endpoints REST APIs with JSON format for data exchange. In order to access services and user's own data, SPS2PLC employ the JWT open standard for authentication over HTTP.
 - Requirement Checker contains algorithms to check consistency and to find a minimal unsatisfiable core of requirements, employing on Z3 Prover (The requiremtns checker is still under development).
 - Code Generator contains a parser for SPS language and to generate IL code for PLC program.
-- a database to store requirements, user data and other information suck as tasks execution logs.
+- a database to store requirements, user data and other information such as tasks execution logs.
 
 ## Screenshot
 ![sps2plc online_projects(iPad Pro)](https://user-images.githubusercontent.com/8842890/76288207-2966fb80-62e1-11ea-8592-f09014d0e612.png)
@@ -62,32 +62,32 @@ $ java -jar ./target/sps2plc-backend-0.0.1-SNAPSHOT.jar
 
 ### Play
 
-```
-visit http://localhost:8080
-```
+#### Online
 
-## Usage
-
-### Online
 ```
 1. Visit http://sps2plc.online
 
 2. Login with test account username: "test", password: "test".
 ```
 
-### Local
+#### Local
+
 ```
-Visit http://localhost:8080
+1. Visit http://localhost:8080
 
-1. Login with username: "test", password: "test".
+2. Login with test account username: "test", password: "test".
+```
 
-2. Create a new project or select an existing one, selecting a project displays in a table the list of requirements.
+## Usage
 
-3. The user can add, edit (double-click a requirement), delete or disable a requiremnt.
+```
+1. Create a new project or select an existing one, selecting a project displays in a table the list of requirements.
 
-4. To insert new requirements, the user can either upload a text file containsing a list of requirements or use the user interface to help build correct SPSs. The interface allows to select a scope, a pattern and a time-dependent delay, and displaying some text firlds to complete the pattern.
+2. The user can add, edit (double-click a requirement), delete or disable a requiremnt.
 
-5. Moving to the task tab the user can simply press a button and launch a code generation task on the server. The task will run in background and the interface will update automatically once the task is completed. In case of conlicting requirements, the user needs to provide priority for each conflicting requirements, the larger the number given, the higher the priority.
+3. To insert new requirements, the user can either upload a text file containsing a list of requirements or use the user interface to help build correct SPSs. The interface allows to select a scope, a pattern and a time-dependent delay, and displaying some text firlds to complete the pattern.
+
+4. Moving to the task tab the user can simply press a button and launch a code generation task on the server. The task will run in background and the interface will update automatically once the task is completed. In case of conlicting requirements, the user needs to provide priority for each conflicting requirements, the larger the number given, the higher the priority.
 
 ```
 ## Frontend
@@ -101,7 +101,7 @@ The source code of the frontend can be found in [SPS2PLC-Frontend](https://githu
 - [ ] Integrate SPSChecker into SPS2PLC
 
 
-## Authors
+## Author
 
 [PythonYXY](https://github.com/PythonYXY)
 

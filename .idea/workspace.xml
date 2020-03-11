@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9fc2a49d-a215-406b-9442-46bbd66d661e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/Requirement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/Requirement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/RequirementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/dao/RequirementMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/requirements/dao/RequirementMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/resources/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/resources/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/resources/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/resources/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sps2plc/requirements/dao/RequirementMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sps2plc/requirements/dao/RequirementMapperTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -289,6 +283,7 @@
       <workItem from="1583736799024" duration="10426000" />
       <workItem from="1583751171039" duration="5747000" />
       <workItem from="1583763496288" duration="867000" />
+      <workItem from="1583835313775" duration="140000" />
     </task>
     <servers />
   </component>
