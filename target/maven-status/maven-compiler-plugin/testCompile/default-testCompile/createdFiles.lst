@@ -1,0 +1,10 @@
+sps2plc/projects/dao/MapperTestApplication.class
+sps2plc/tasks/TaskMapperTest.class
+sps2plc/core/utils/GraphTests.class
+sps2plc/requirements/dao/RequirementMapperTest.class
+sps2plc/projects/dao/ProjectMapperTest.class
+sps2plc/ioTable/dao/MapperTestApplication.class
+sps2plc/core/models/ScopeCodeTests.class
+sps2plc/tasks/MapperTestApplication.class
+sps2plc/requirements/dao/MapperTestApplication.class
+sps2plc/ioTable/dao/IOTableMapperTest.class
