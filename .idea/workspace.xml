@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fc2a49d-a215-406b-9442-46bbd66d661e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pattern_to_smt.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/resources/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/resources/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/resources/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/resources/main.js.map" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +73,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1XyBcdg3eXEumed02VO7Le7VOU3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -284,6 +291,9 @@
       <workItem from="1583751171039" duration="5747000" />
       <workItem from="1583763496288" duration="867000" />
       <workItem from="1583835313775" duration="140000" />
+      <workItem from="1583983810547" duration="224000" />
+      <workItem from="1584072425082" duration="116000" />
+      <workItem from="1584077596194" duration="387000" />
     </task>
     <servers />
   </component>
