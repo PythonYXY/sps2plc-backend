@@ -90,10 +90,6 @@ public class SPSFrontEnd {
         return builder.getContext().getRequirementList();
     }
 
-    /**
-     * @param priorityArray priority of requirements provided by user
-     * @return the ILCode object
-     */
     public ILCode getILCode(List<List<String>> priorityArray, Map<String, String> ioMap) {
         return new SPS2PLC().translate(getRequirements(), priorityArray, ioMap);
     }

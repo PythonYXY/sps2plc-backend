@@ -9,7 +9,7 @@ import java.util.*;
 
 public class SPS2PLC implements ExpressionVisitor {
 
-    private final Map<String, Pattern> patternMap = Pattern.loadPattern(Pattern.PATTERNS_FILE);
+    private final Map<String, ILPattern> patternMap = ILPattern.loadPattern(ILPattern.PATTERNS_FILE);
 
     private ILCode ilCode;
 
@@ -39,7 +39,7 @@ public class SPS2PLC implements ExpressionVisitor {
         }
 
         for (Requirement requirement: ilCode.getRequirements()) {
-            Pattern pattern = patternMap.get(requirement.key());
+            ILPattern pattern = patternMap.get(requirement.key());
             if (pattern == null) {
                 throw new RuntimeException("Pattern " + requirement.key() + " not found!");
             }

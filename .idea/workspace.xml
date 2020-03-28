@@ -2,11 +2,148 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fc2a49d-a215-406b-9442-46bbd66d661e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pattern_to_smt.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/smt/ConsistencyChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/smt/Formula.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/translators/ILPattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/translators/SMTPattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/translators/SPS2SMT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/resources/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/resources/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/resources/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/resources/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/SPSFrontEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/fe/SPSFrontEnd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/plc/ILCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/plc/ILCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/translators/Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/translators/Pattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/translators/SPS2PLC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sps2plc/core/models/translators/SPS2PLC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pattern_to_smt.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pattern_to_smt.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pattern_to_plc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pattern_to_smt.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/Sps2plcApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/Temp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/SPSFrontEnd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/SpsParserException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/Context.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarBaseListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarBaseVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarLexer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$AbsenceContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$BooleanExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$BracketExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$DelayContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$DelayOnBothSidesContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$DelayOnRightSideContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$DelayWithEnd1Context.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$DelayWithEnd2Context.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$DelayWithoutEndContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$ExistenceContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$ExprContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$InterlockContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$ListContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$NumberContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$NumberExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$PositiveIntContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$PropertyContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$ReqIDContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$RequirementContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$ScopeContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$UnaryExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$UniversalityContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser$VariableExpressionContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/RequirementGrammarVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/fe/sps/parser/ThrowingErrorListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/models/plc/ILCode$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/models/plc/ILCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/models/plc/ScopeCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/models/sps/Delay$Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/models/sps/Delay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/models/sps/Property$Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/models/sps/Property.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/models/sps/Requirement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/models/sps/Scope$Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/models/sps/Scope.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/models/sps/expressions/BooleanExpression$Operator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/models/sps/expressions/BooleanExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/models/sps/expressions/Expression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/models/sps/expressions/ExpressionVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/models/sps/expressions/NumberExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/models/sps/expressions/UnaryExpression$Operator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/models/sps/expressions/UnaryExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/models/sps/expressions/VariableExpression$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/models/sps/expressions/VariableExpression.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/models/translators/Pattern.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/models/translators/SPS2PLC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/core/utils/Graph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/ioTable/IOMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/ioTable/IOTableController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/ioTable/IOTableService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/ioTable/dao/IOTableMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/projects/Project.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/projects/ProjectController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/projects/ProjectNotFoundAdvice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/projects/ProjectNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/projects/ProjectService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/projects/dao/ProjectMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/requirements/FailedToCreateRequirementException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/requirements/Requirement$ReqState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/requirements/Requirement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/requirements/RequirementController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/requirements/RequirementNotFoundAdvice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/requirements/RequirementNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/requirements/RequirementService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/requirements/dao/RequirementMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/security/CORSFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/security/JWTAuthenticationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/security/JWTAuthorizationFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/security/SecurityConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/security/WebSecurity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/tasks/Task$TaskStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/tasks/Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/tasks/TaskController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/tasks/TaskService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/tasks/dao/TaskMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/users/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/users/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/users/UserDetailsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/users/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sps2plc/users/dao/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/data-table.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/data-table.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/data-table.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/data-table.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/main.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/polyfills.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/polyfills.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/runtime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/runtime.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/scripts.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/styles.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/vendor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/resources/vendor.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/logback-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sps2plc/core/models/ScopeCodeTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sps2plc/core/utils/GraphTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sps2plc/ioTable/dao/IOTableMapperTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sps2plc/ioTable/dao/MapperTestApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sps2plc/projects/dao/MapperTestApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sps2plc/projects/dao/ProjectMapperTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sps2plc/requirements/dao/MapperTestApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sps2plc/requirements/dao/RequirementMapperTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sps2plc/tasks/MapperTestApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sps2plc/tasks/TaskMapperTest.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +216,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/sps2plc/tasks" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -294,6 +431,12 @@
       <workItem from="1583983810547" duration="224000" />
       <workItem from="1584072425082" duration="116000" />
       <workItem from="1584077596194" duration="387000" />
+      <workItem from="1584800120381" duration="10000" />
+      <workItem from="1584804569364" duration="517000" />
+      <workItem from="1584962767462" duration="1686000" />
+      <workItem from="1585049163016" duration="166000" />
+      <workItem from="1585049993013" duration="212000" />
+      <workItem from="1585146503822" duration="5926000" />
     </task>
     <servers />
   </component>

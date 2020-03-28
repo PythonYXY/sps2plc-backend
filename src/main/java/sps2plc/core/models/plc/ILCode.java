@@ -4,11 +4,10 @@ import sps2plc.core.models.sps.Property;
 import sps2plc.core.models.sps.Requirement;
 import sps2plc.core.models.sps.Scope;
 import sps2plc.core.models.sps.expressions.*;
-import sps2plc.core.models.translators.Pattern;
+import sps2plc.core.models.translators.ILPattern;
 import sps2plc.core.utils.Graph;
 
 import java.util.*;
-import java.util.regex.Matcher;
 import java.util.stream.Collectors;
 
 public class ILCode {
@@ -71,7 +70,7 @@ public class ILCode {
 
 
     public void replaceExpressions(List<Map<Boolean, List<AbstractMap.SimpleEntry<String, String>>>> scopeExpressionILCodes,
-                      Pattern pattern) {
+                      ILPattern pattern) {
 
         patternScopeCodes.add(pattern.getScopeCode());
         ScopeCode scopeCode = pattern.getScopeCode().clone();

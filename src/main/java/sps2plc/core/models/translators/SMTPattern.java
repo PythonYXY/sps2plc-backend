@@ -9,28 +9,44 @@ import org.json.JSONObject;
 import sps2plc.core.fe.sps.parser.RequirementBuilder;
 import sps2plc.core.fe.sps.parser.RequirementGrammarLexer;
 import sps2plc.core.fe.sps.parser.RequirementGrammarParser;
-import sps2plc.core.models.plc.ScopeCode;
+import sps2plc.core.models.smt.Formula;
 import sps2plc.core.models.sps.Requirement;
 
-import javax.json.JsonObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public abstract class Pattern {
+public class SMTPattern {
 
-    public static Map<String, Pattern> loadPattern(String configuration, String reqKey) {
-        Map<String, Pattern> patterns = new HashMap<>();
+    public static final String PATTERNS_FILE = "/pattern_to_smt.json";
+    private final Formula formula;
+    private final Requirement requirement;
 
+    public SMTPattern(Requirement requirement, Formula formula) {
+        this.formula = formula;
+        this.requirement = requirement;
+    }
+
+    public Requirement getRequirement() {
+        return requirement;
+    }
+
+    public Formula getFormula() {
+        return formula;
+    }
+
+    public static Map<String, SMTPattern> loadPattern(String configuration) {
+        Map<String, SMTPattern> patterns = new HashMap<>();
         ParseTreeWalker walker = new ParseTreeWalker();
 
-        InputStream is = ILPattern.class.getResourceAsStream(configuration);
-        if (is == null) throw new RuntimeException("Resource not found!");
+        InputStream is = SMTPattern.class.getResourceAsStream(configuration);
+        if (is == null) {
+            throw new RuntimeException("Resource not found!");
+        }
 
         String json = null;
-
         try {
             json = IOUtils.toString(is);
         } catch (IOException e) {
@@ -41,8 +57,11 @@ public abstract class Pattern {
 
         for (int i = 0; i < jsonArray.length(); ++i) {
             JSONObject obj = jsonArray.getJSONObject(i);
+
+            String reqText = obj.getString("pattern");
+
             RequirementBuilder reqBuilder = new RequirementBuilder();
-            RequirementGrammarLexer reqLexer = new RequirementGrammarLexer(CharStreams.fromString(obj.getString(reqKey)));
+            RequirementGrammarLexer reqLexer = new RequirementGrammarLexer(CharStreams.fromString(reqText));
             CommonTokenStream tokens = new CommonTokenStream(reqLexer);
             RequirementGrammarParser parser = new RequirementGrammarParser(tokens);
 
@@ -50,12 +69,9 @@ public abstract class Pattern {
             List<Requirement> requirementList = reqBuilder.getContext().getRequirementList();
             Requirement requirement = requirementList.get(0);
 
-            ILPattern pattern = new ILPattern(requirement, ScopeCode.getScopeCode(scopeCode));
-            Pattern pattern = createPattern(obj, requirement);
+            SMTPattern pattern = new SMTPattern(requirement, Formula.getFormula(obj.getJSONObject("smt")));
             patterns.put(requirement.key(), pattern);
         }
         return patterns;
     }
-
-    public abstract Pattern createPattern(JsonObject obj, Requirement requirement);
 }
